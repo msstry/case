@@ -1,0 +1,26 @@
+/*ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif; color:#333; }
+table{border-collapse:collapse;border-spacing:0;}*/
+.pr{ position:relative;}
+.pa{ position:absolute;}
+#lun1{ width:100%; position:relative; margin:0 auto;overflow: hidden;}
+.box_163css{ width:100%; height:759px;position:relative;padding-bottom: 70px;}
+.box_163css img{ display:block;width:1423px; height:759px}
+.box_163css  li{display:block; overflow: hidden;}
+.scroll_nav{width: 1210px;position:absolute; bottom:0;margin-left: 100px;}
+.scroll_nav li{ width: 33%; height: 58px;border-bottom: 3px solid #999999; cursor: pointer; position: relative;
+    color: #000;float: left;font-weight: 600;margin-right: 4px}
+.scroll_nav li.current{background:rgba(f,f,f,f);filter:alpha(opacity=90);color: #0A83D6;}
+.scroll_nav li p{ position:relative; font-size: 14px;padding-top: 10px;}
+.prev,.next{ cursor:pointer; width:26px; height:51px; top:50%; margin-top:-25px; }
+.prev{ left:20px}
+.next{ right:10px}
+.next img{ left:-27px;}
+.silder-box{position:relative;margin:0 auto ;width: 1210px;height: 330px;}
+.silder{margin:0 auto 0;overflow: hidden;}
+.silder li{width:597px;}
+.silder li img{width:100%;height:100%;}
+.silder-button{width:25px;height:54px;position:absolute;cursor:pointer;}
+.silder-button.btl{left:-30px;top: 50%;background:url(../imgs/lun2-lr1.png) no-repeat;}
+.silder-button.btr{right:-30px;top: 50%;background:url(../imgs/lun2-lr2.png) no-repeat;}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mysql xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<sonyvip>
+	<row><iphone></iphone><email></email><pass></pass></row>
+	<row><iphone>12345123451</iphone><email xsi:nil="true"/><pass>412312</pass></row>
+	<row><iphone>12345612345</iphone><email xsi:nil="true"/><pass>asdf</pass></row>
+	<row><iphone>12345678901</iphone><email xsi:nil="true"/><pass>123456</pass></row>
+	<row><iphone>12345678902</iphone><email xsi:nil="true"/><pass>qwert</pass></row>
+	<row><iphone>13467984508</iphone><email>12345@qw.com</email><pass>1234QWEasd</pass></row>
+	<row><iphone>15191596535</iphone><email>1234@ax.com</email><pass>112233Aasd</pass></row>
+	<row><iphone>15291596535</iphone><email>12306@103.com</email><pass>1234ASDasd</pass></row>
+	<row><iphone>18710901942</iphone><email></email><pass>123456</pass></row>
+</sonyvip>
+</mysql>

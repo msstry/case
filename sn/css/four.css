@@ -1,0 +1,202 @@
+body,html,h1,h2,h3,h4,h5,h6,ul,li,img,ol,dl,dd,p,input,select,textarea,td,div,form,textarea,th{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family:"微软雅黑";
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:0;
+}
+
+/*four-con*/
+#four-con{
+	width: 100%;
+	background: #f5f5f5;
+}
+.four-con0{
+	margin: 0 auto;
+	width: 1210px;
+    padding-bottom: 50px;
+}
+.four-con-header{
+	padding: 59px 0px 0px;
+}
+.four-con-header p{
+	background: url(../imgs/four-1.png) no-repeat right top;
+	height: 38px;
+    padding-left: 14px;
+    font-size: 24px;
+    line-height: 38px;
+    color: #000000;
+}
+.four-con-header1{
+	padding: 46px 0 20px;
+    border-bottom: 3px solid #cccccc;
+}
+.four-con-header1 a img{
+	width: 18px;
+    height: 18px;
+    float: right;
+}
+.four-con-header1:after{
+	content: '';
+    display: block;
+    clear: both;
+}
+.four-con-con{
+	width: 100%;
+    padding: 80px 0 50px;
+    /*display: none;*/
+}
+.four-con-con1{
+	width: 133px;
+    margin: 0 auto;
+}
+.four-con-con2{
+	width: 100%;
+    text-align: center;
+    color: #5a5a5a;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.four-con-con3{
+	color: #0a83d7;
+    font-size: 18px;
+    padding-top: 22px;
+    text-align: center;
+}
+.four-con-con3 a{
+	color: #0a83d7;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.four-shop0{
+	width: 100%;
+    padding: 25px 0 30px 0;
+    display: none;
+}
+.four-shop0 div{
+	color: #262626;
+    font-size: 16px;
+    float: left;
+}
+
+.four-shop1{
+	width: 100%;
+    background: #ffffff;
+    padding: 45px 0px;
+    margin-bottom: 16px;
+    box-sizing: border-box;	
+    display: none;
+}
+.four-shop1:after{
+	content: '';
+    display: block;
+    clear: both;
+}
+.four-shop11{
+    width: 1210px;
+    margin: 0 auto;
+    position: relative	
+}
+.four-shop111{
+	color: #262626;
+    font-size: 16px;
+    float: left;
+    width: 555px;
+}
+.four-shop111 img{
+	width: 114px;
+	height: 114px;
+    float: left;
+	display: block;
+}
+.four-shop111 div{
+	width: 340px;
+    margin-left: 14px;
+    float: left;
+    color: #333333;
+    font-size: 16px;
+    padding-bottom: 3px;	
+}
+.four-shop112{
+    color: #262626;
+    font-size: 16px;
+    float: left;
+    width: 165px;
+}
+.four-shop113{
+	width: 100px;
+    float: left;
+    padding-right: 40px;
+    margin-left: 45px;
+}
+.four-shop114{
+	color: #a6a6a6;
+    font-size: 16px;
+    float: left;
+    margin-left: 100px; 
+}
+
+.third-shop-r2-31{
+    background: #ffffff;
+    float: left;
+}
+.third-shop-r2-31 input{
+	width: 100px;
+    float: left;
+}
+.shopping-delete{
+	display: block;
+    width: 32px;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.third-shop-r2-31:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.third-shop-r2-3:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.four-shopmoney{
+	width: 100%;
+    background: #FFFFFF;
+    padding: 30px 0 25px 0;
+    border-top: 1px solid #ccc;
+    display: none;
+}
+.four-shopmoneys{
+	width: 1210px;
+	margin: 0 auto;
+	padding-bottom: 22px;
+	padding-top: 20px;
+    border-top: 1px dashed #999999;
+}
+.four-shopmoneys a{
+	display: block;
+    width: 210px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    float: right;
+    background: #0a83d7;
+    margin-left: 25px;
+	
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mysql xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<shoppingcart>
+	<row><vipName>12345123451</vipName><goodsId>0001</goodsId><goodsCount>1</goodsCount></row>
+</shoppingcart>
+</mysql>

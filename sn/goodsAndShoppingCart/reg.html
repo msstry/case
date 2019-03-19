@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset = "utf-8"/>
+	</head>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+	</style>
+<body>
+		用户名：<input id="userId" type="text"  /><span id="showUser"></span><br/>
+		密　码：<input id="userPass" type="password" /><br/>
+		<input id="btnReg" type="button" value="注册" />
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){		
+		//验证用户名是否存在
+		$("#userId").blur(function(){
+			$.get(
+				"checkUser.php",
+				{
+					"userId":$("#userId").val()	
+				},
+				function(data){
+					if(data=="1"){
+						$("#showUser").html("√");						
+					}else{
+						$("#showUser").html("×");
+					}
+				}				
+			);
+			
+		});
+		
+		$("#btnReg").click(function(){
+			//1、
+			$.post(
+				"addUser01.php",
+				{
+					"userId":$("#userId").val(),
+					"userPass":$("#userPass").val()
+				},
+				function(data){					
+					
+				}
+			);
+		});
+	});
+	
+</script>

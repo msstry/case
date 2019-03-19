@@ -1,0 +1,38 @@
+/* Example 5 */
+
+#example5 .sp-thumbnail-image-container {
+	width: 200px;
+	height: 100px;
+	overflow: hidden;
+	float: left;
+}
+#example5 .sp-thumbnail-image {
+	height: 100%;
+}
+#example5 .sp-thumbnail-description {
+	font-size: 14px;
+	color: #333;
+}
+
+@media (max-width: 500px) {
+	#example5 .sp-thumbnail {
+		text-align: center;
+	}
+
+	#example5 .sp-thumbnail-image-container {
+		display: none;
+	}
+
+	#example5 .sp-thumbnail-text {
+		width: 120px;
+	}
+
+	#example5 .sp-thumbnail-title {
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+
+	#example5 .sp-thumbnail-description {
+		display: none;
+	}
+}

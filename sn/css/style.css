@@ -1,0 +1,14 @@
+/**{margin:0;padding:0;}
+li{list-style:none outside none;}
+body{background:url(../images/rbg.jpg) repeat scroll 0 0 #aaa;font-family:"宋体";padding:50px 0 0;}
+*/
+/* .silder-box{width:600px;height:400px;margin:0 auto 0;position:relative;}
+.silder{position:relative;overflow:hidden;width:400px;height:400px;margin:0 auto 0;}
+.silder li{width:400px;height:400px;} */
+.silder-box{position:relative;margin:0 auto ;width: 1210px;height: 330px;}
+.silder{margin:0 auto 0;overflow: hidden;}
+.silder li{width:597px;}
+.silder li img{width:100%;height:100%;}
+.silder-button{width:25px;height:54px;position:absolute;cursor:pointer;}
+.silder-button.btl{left:-30px;top: 50%;background:url(../imgs/lun2-lr1.png) no-repeat;}
+.silder-button.btr{right:-30px;top: 50%;background:url(../imgs/lun2-lr2.png) no-repeat;}
