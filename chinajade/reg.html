@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员注册_中国和田玉网</title>
+</head>
+<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/reg.css">
+<body>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<!-- header -->
+	<div class="header">
+		<div class="header_inner"> 
+			<a href="#" class="logo">
+				<img src="imgs/logo1.png" alt="中国和田玉网">
+			</a>
+			<h2 class="header_title">欢迎注册</h2>
+		</div>
+	</div>
+<!-- content -->
+	<div class="main">
+    <div class="wrapper">
+        <div class="reg_box">
+                <ul>
+                    <li>
+                        第三方帐号直接登录：
+                        <a href="#" class="icon_qq">QQ直接登录</a><a href="#" class="icon_weibo">微博登录</a><a href="#" class="icon_alipay">支付宝登录</a> 已有中国和田玉网帐号？
+                        <a href="login.html">马上登录</a>
+                    </li>
+                    <li>
+                        <label for="Username"><span>*</span> 用户名</label>
+                        <input type="text" name="username" id="username">
+                        <span id="login" class="Validform_checktip">请填写登录用户名</span>
+                    </li>
+                    <li>
+                        <label for="Password"><span>*</span> 密码</label>
+                        <input type="password" name="userpass" id="userpass">
+                        <span class="Validform_checktip">  请设置登录密码，密码范围在6~16位之间</span>
+                    </li>
+                    <li>
+                        <label for="ConfirmPassword"><span>*</span> 确认密码</label>
+                        <input type="password" name="ConfirmPassword" id="ConfirmPassword">
+                        <span class="Validform_checktip">请确认登录密码</span>
+                    </li>
+                    <li>
+                        <label for="Nickname"><span>*</span> 昵称</label>
+                        <input name="Nickname" id="Nickname" class="input_m" type="text">
+                        <span class="Validform_checktip">昵称是您在中国和田玉网活动时对外显示的名号，例如：玉面书生</span>
+
+                    </li>
+                    <li>
+                        <label for="Realname"><span>*</span> 姓名</label>
+                        <input type="text" name="Realname" id="Realname" value="">
+                        <span class="Validform_checktip">请填写您的姓名</span>
+
+                    </li>
+                    <li>
+                        <label for="Mobile"><span>*</span> 手机号</label>
+                        <input type="text" name="Mobile" id="Mobile" value="">
+                        <span class="Validform_checktip">请填写您的手机号</span>
+                    </li>
+                    <li>
+                        <label for="yzm"><span>*</span> 短信验证码</label>
+                        <input type="text" name="yzm" id="yzm" value="" style="width:120px">
+                        <input id="btnSendCode" class="sendcode" type="button" value="短信验证码">
+                        <span class="Validform_checktip"></span>
+                        <span id="yzm_tip"></span>
+                    </li>
+                    <li class="agree">
+                        <em id="cboxAgree" class="fCheck fChecked">我已阅读并接受</em><a href="http://www.chinajade.cn/agreement" target="_blank" style="margin-left: -10px">中国和田玉网用户注册协议</a>
+                        
+                    </li>
+                    <li class="reg">
+                        <input type="button" id="btn" name="" value="注册">
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	 $('.fCheck').click(function () {
+        if ($(this).hasClass('fChecked')) {
+            $(this).removeClass('fChecked');
+            $("input[name='SavePassword']").val(false);
+        } else {
+            $(this).addClass('fChecked');
+            $("input[name='SavePassword']").val(true);
+        }
+    });
+    $(".login").find("a").click(function () {
+        loginStart();
+    });
+    $("#Password").keypress(function (e) {
+        if (e.which == 13) {
+            loginStart();
+        }
+    });
+</script>
+<!-- footer -->
+	<div class="footer">
+        <div class="footer_inner">
+            <div class="promise"></div>
+            <div class="footer_content">
+                &copy;2004-2014 <a href="#" target="_blank">中国和田玉网 www.chinajade.cn</a> 电话：0514-87225756
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+<script type="text/javascript">
+	$("#userpass").blur(function(){		
+		var reg = /^[\w\W]{6,16}$/;//\u4e00-\u9fa5
+		if(reg.test($(this).val())){
+			this.nextElementSibling.style.cssText="background:url(imgs/right.png) no-repeat left center";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;";
+		}else{
+			this.style.backgroundColor="#ffe7e7";
+			this.nextElementSibling.style.cssText="background: url(imgs/error.png) no-repeat left center;color:red";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;密码范围在6~16位之间";
+		}
+	})
+	$("#ConfirmPassword").blur(function(){		
+		if($("#userpass").val() == $("#ConfirmPassword").val()){
+			this.nextElementSibling.style.cssText="background:url(imgs/right.png) no-repeat left center";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;";
+		}else{
+			this.style.backgroundColor="#ffe7e7";
+			this.nextElementSibling.style.cssText="background: url(imgs/error.png) no-repeat left center;color:red";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;请确认登录密码";
+		}
+	})
+	$("#Nickname").blur(function(){		
+		var reg = /^[\u4E00-\u9FA5\uf900-\ufa2d\w\.\s]{2,16}$/;
+		if(reg.test($(this).val())){
+			this.nextElementSibling.style.cssText="background:url(imgs/right.png) no-repeat left center";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;";
+		}else{
+			this.style.backgroundColor="#ffe7e7";
+			this.nextElementSibling.style.cssText="background: url(imgs/error.png) no-repeat left center;color:red";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;昵称至少2个字符,最多16个字符";
+		}
+	})
+	$("#Realname").blur(function(){		
+		var reg =  /^[\u4E00-\u9FA5\uf900-\ufa2d\w\.\s]{2,16}$/;
+		if(reg.test(this.value)){
+			this.nextElementSibling.style.cssText="background:url(imgs/right.png) no-repeat left center";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;";
+		}else{
+			this.style.backgroundColor="#ffe7e7";
+			this.nextElementSibling.style.cssText="background: url(imgs/error.png) no-repeat left center;color:red";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;姓名不能超过20个字符";
+		}
+	})
+	$("#Mobile").blur(function(){		
+		var reg = /^13[0-9]{9}$|14[0-9]{9}|15[0-9]{9}$|17[0-9]{9}$|18[0-9]{9}$/;
+		if(reg.test($(this).val())){
+			this.nextElementSibling.style.cssText="background:url(imgs/right.png) no-repeat left center";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;";
+		}else{
+			this.style.backgroundColor="#ffe7e7";
+			this.nextElementSibling.style.cssText="background: url(imgs/error.png) no-repeat left center;color:red";
+			this.nextElementSibling.innerHTML="&nbsp;&nbsp;请输入正确的手机号";
+		}
+	})
+function ajaxs(username,userpass,Nickname,Realname,Mobile){
+	$.post("zc.php", {"username":username,"userpass":userpass,"Nickname":Nickname,"Realname":Realname,"Mobile":Mobile},
+ 		  function(data){
+    	 	if(data==1){
+    	 		alert("注册成功");
+    	 		location.href="login.html";
+    	 	}else if(data==2){
+    	 	 	$("#login").html("&nbsp;&nbsp;用户名已存在");
+    	 	 	$("#login").css("background","url(imgs/error.png)no-repeat");	
+    	 	 	$("#login").css("color","red");				
+			}else{
+				alert("注册失败");
+			}
+			// alert(data);
+     },"json"); 
+}
+$("#username").blur(function(){
+	ajaxs($("#username").val(),$("#userpass").val(),$("#Nickname").val(),$("#Realname").val(),$("#Mobile").val());
+});
+	$("#btn").click(function(){
+		ajaxs($("#username").val(),$("#userpass").val(),$("#Nickname").val(),$("#Realname").val(),$("#Mobile").val());
+	});
+
+</script>
+</body>
+</html>

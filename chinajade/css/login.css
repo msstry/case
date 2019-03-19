@@ -1,0 +1,317 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd,p,input,select,textarea,td{
+	margin:0;
+	padding:0;
+}
+html,body{
+	height:100%;
+}
+body {
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: 宋体;
+    line-height: 1.6;
+    background: url(../imgs/bg.jpg) repeat;
+    color: #636363;
+}
+a{
+	text-decoration:none;
+	cursor: pointer;
+	color: #00766D;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:0;
+	display: block;
+}
+em,i{
+	font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 100%;
+	font-weight:normal;
+}
+/*header*/
+.header{
+	position:relative;
+	width:100%;
+	min-width: 1180px;
+	height:150px;
+	background:url(../imgs/bg1.jpg) repeat;
+	border-bottom:1px #e0e0e0 solid;
+}
+.header_inner{
+	margin:0 auto;
+	width:980px;
+	height:auto;
+}
+.logo{
+	width:186px;
+	margin-top:90px;
+}
+.logo img{
+	width:186px;
+	height:45px;
+}
+.logo,.header_title{
+	float:left;
+	display: inline;
+}
+.header_title{
+	margin:102px 0 0 25px;
+	padding-left:20px;
+	height:20px;
+	font-weight:400;
+	font-size:20px; 
+	line-height: 20px;
+	font-family: "Microsoft YaHei";
+	color: #535353;
+    border-left: #A1A1A1 1px solid;
+    letter-spacing: 2px;
+}
+/*content*/
+.main {
+	width:100%;
+	min-width: 1180px;
+	height:auto;
+	overflow:hidden;
+	background:#fff;
+}
+.wrapper {
+	margin:0 auto;
+	width:980px;
+	height:auto;
+	overflow:hidden;
+}
+.login_bg {
+	width:100%;
+	height:550px;
+	background:url(../imgs/login_bgline.png) repeat-x;
+}
+.login_bg_gg {
+	width:100%;
+	height:550px;
+	background:url(../imgs/login_bg1.jpg) no-repeat center;
+}
+.login_gg {
+    float: left;
+    width: 600px;
+    height: 550px;
+}
+.login_gg a {
+    display: block;
+    width: 600px;
+    height: 550px;
+}
+.login_area {
+    float: right;
+    margin-top: 40px;
+    width: 350px;
+}
+.login_box .top {
+    height: 60px;
+    font-weight: 400;
+    font-size:18px;
+    line-height: 60px;
+    font-family:'Microsoft YaHei';
+    color: #149186;
+    background: #ECECEC;
+    border-radius: 5px 5px 0 0;
+    letter-spacing: 2px;
+}
+.login_box li {
+    padding-left: 30px;
+    background: #fff;
+}
+.login_box .inputs {
+    position: relative;
+}
+.login_box .username {
+    padding-top: 30px;
+    height: 60px;
+}
+.login_box .inputs label {
+    position: absolute;
+    left: 72px;
+    line-height: 38px;
+    height: 38px;
+    color: #a6a6a6;
+    cursor: text;
+    font-size: 14px;
+    color: #999;
+}
+.login_box .username input, .login_box .password input {
+    width: 245px;
+    height: 36px;
+    padding: 0 5px 0 40px;
+    font-size:14px;
+    color: #333;
+    border: #ccc 1px solid;
+    border-radius: 2px;
+    background: url(../imgs/login_bg.png) no-repeat 0 0;
+    vertical-align: middle;
+}
+.Validform_checktip {
+    margin: 4px 0 12px 4px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    color: #999;
+    font-size: 12px;
+}
+.login_box .password {
+    height: 70px;
+}
+#tips_error {
+    font: 400 12px/20px 'simsun';
+    color: #f00;
+    margin-right: 28px;
+    background: #FFEBEC;
+    border: #FFBDBF 1px solid;
+    text-align: center;
+}
+.hide{
+	display:none;
+}
+.login_box .rember {
+    position: relative;
+    padding: 5px 30px 10px 30px;
+    height: 20px;
+    font-size:12px;
+}
+.fChecked {
+    background-position: 0px -195px;
+}
+.fCheck {
+    display: inline-block;
+    padding-left: 17px;
+    margin-right: 15px;
+    background-position: 0px -170px;
+    cursor: pointer;
+    color: #666;
+    font-style: normal;
+    height: 14px;
+    line-height: 14px;
+}
+.fCheck, .fChecked {
+    background: url(../imgs/login_bg.png) no-repeat 0 -195px;
+}
+.login_box .rember a {
+    position: absolute;
+    right: 26px;
+    top: 5px;
+}
+.login_box .rember a:hover {
+   color:red;
+}
+.login_box li {
+    padding-left: 30px;
+    background: #fff;
+}
+.login_box .login .btn {
+    display: block;
+    height: 36px;
+    width: 292px;
+    line-height: 36px;
+    background: #FF7E00;
+    border-radius: 2px;
+    font-size:18px;
+    font-weight: 400px;
+    font-family: "微软雅黑";
+    color: #fff;
+    border:none;
+    text-align: center;
+    cursor: pointer;
+}
+.login_box .login .btn:hover {
+	color:#fff;
+    background:#FF8E20;
+}
+.login_box .regnow {
+    padding: 15px 28px 20px 0;
+    font: 400 12px/20px 'simsun';
+    text-align: right;
+}
+.login_box .regnow a {
+    color: #FB7C00;
+}
+.login_box .regnow a:hover{
+    color: red;
+}
+.login_box .bottom {
+    height: 110px;
+    font-size:14px;
+    font-family:'Microsoft YaHei';
+    color: #333;
+    background: #F8F8F8;
+    border-radius: 0 0 5px 5px;
+    border-top: #E0E0E0 1px solid;
+}
+.login_box .bottom span {
+    display: block;
+    margin-top: 5px;
+    height: 36px;
+    line-height: 36px;
+}
+.icon-qq,.icon-zfb,.icon-weibo {
+	display:block;
+	float:left;
+	margin-right:10px;
+	height:24px;
+	line-height:24px;
+	background:url(../imgs/login_bg.png) no-repeat 0 0;
+	text-indent:-999em;
+}
+.icon-qq {
+    width: 80px;
+    background-position: 0 -80px;
+}
+.icon-weibo {
+    width: 90px;
+    background-position: 0 -140px;
+}
+.icon-zfb {
+    width: 100px;
+    background-position: 0 -110px;
+}
+/*footer*/
+.footer {
+    position: relative;
+    width: 100%;
+    min-width: 1180px;
+    height: auto;
+}
+.footer_inner {
+    margin: 0 auto;
+    width: 980px;
+    padding: 10px 0;
+}
+.promise {
+    width: 100%;
+    height: 70px;
+    background: url(../imgs/shop_promise.png) no-repeat center;
+}
+.footer_content {
+    font-weight:400;
+    font-family:'Microsoft YaHei';
+    font-size:12px; 
+    color: #666;
+    text-align: right;
+}
+.footer_content a {
+    color: #666;
+}
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1px;
+    height: 4px;
+    z-index: 2;
+    width: 100%;
+    background: url(../imgs/subnav_shadow.png) repeat-x;
+    display: inline;
+    zoom: 1;
+}

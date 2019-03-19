@@ -1,0 +1,270 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd,p,input,select,textarea,td{
+	margin:0;
+	padding:0;
+}
+html,body{
+	height:100%;
+}
+body{
+	font-family:"宋体";
+	color:#636363;
+	font-size: 14px;
+	line-height: 1.6;
+	background:url(../imgs/bg.jpg) repeat;
+}
+a{
+	text-decoration:none;
+	cursor: pointer;
+	color: #00766D;
+}
+a:hover{
+	color:#f00;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:0;
+	display: block;
+}
+em,i{
+	font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 100%;
+	font-weight:normal;
+}
+/*header*/
+.header{
+	position:relative;
+	width:100%;
+	min-width: 1180px;
+	height:150px;
+	background:url(../imgs/bg1.jpg) repeat;
+	border-bottom:1px #e0e0e0 solid;
+}
+.header_inner{
+	margin:0 auto;
+	width:980px;
+	height:auto;
+}
+.logo{
+	width:186px;
+	margin-top:90px;
+}
+.logo img{
+	width:186px;
+	height:45px;
+}
+.logo,.header_title{
+	float:left;
+	display: inline;
+}
+.header_title{
+	margin:102px 0 0 25px;
+	padding-left:20px;
+	height:20px;
+	font-weight:400;
+	font-size:20px; 
+	line-height: 20px;
+	font-family: "Microsoft YaHei";
+	color: #535353;
+    border-left: #A1A1A1 1px solid;
+    letter-spacing: 2px;
+}
+/*content*/
+.main{
+	width:100%;
+	min-width:1180px;
+	height:auto;
+	overflow: hidden;
+	background:#fff;
+}
+.wrapper{
+	margin:0 auto;
+	width:980px;
+	height:auto;
+	overflow: hidden;
+}
+.reg_box{
+	padding:30px 0 20px 80px;
+}
+.reg_box li{
+	height:50px;	
+}
+.reg_box li strong{
+	font-weight: 400;
+	float:left;
+}
+.icon_qq,.icon_alipay,.icon_weibo {
+	display:inline-block;
+	margin-right:10px;
+	height:24px;
+	line-height:24px;
+	background:url(../imgs/login_bg.png) no-repeat 0 0;
+	text-indent:-999em;
+}
+.icon_qq{
+	width:80px;
+	background-position: 0 -80px;
+	z-index: -1;
+}
+.icon_weibo{
+	width:90px;
+	background-position: 0 -140px;
+}
+.icon_alipay{
+	width:100px;
+	background-position: 0 -110px;
+}
+label {
+    cursor: pointer;
+}
+.reg_box li label {
+    float: left;
+    width: 120px;
+    line-height: 32px;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei';
+    text-align: right;
+    padding-right: 8px;
+}
+.reg_box li label span {
+    color: #F00;
+}
+.Validform_error {
+    background-color: #ffe7e7;
+}
+.Validform_checktip {
+    margin: 4px 0 12px 4px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    color: #999;
+    font-size: 12px;
+    font-family: 'simsun';
+}
+.reg_box input.sendcode {
+    width: 108px;
+    height: 34px;
+    font-size: 12px;
+    color: #7d7d7d;
+    padding: 0 5px;
+    cursor: pointer;
+    background: #E2EDEA;
+    border: #C5DCD5 1px solid;
+    border-radius: 2px;
+}
+#yzm{
+    width:100px;
+}
+.reg_box input.sendcode:hover{
+	background:#BCE1D7;
+	color:#333;
+}
+.reg_box li.agree {
+    height: 40px;
+    font-size: 12px;
+    padding-left: 130px;
+}
+.fCheck, .fChecked {
+    background: url(../imgs/login_bg.png) no-repeat 0px -195px;
+}
+.fCheck {
+    display: inline-block;
+    padding-left: 17px;
+    margin-right: 15px;
+    background-position: 0px -170px;
+    vertical-align: baseline;
+    cursor: pointer;
+    color: #666;
+    font-style: normal;
+    height: 14px;
+    line-height: 14px;
+}
+.fChecked {
+    background-position: 0px -195px;
+}
+.reg_box li.reg {
+    padding-left: 128px;
+}
+#btn {
+    display: block;
+    height: 36px;
+    width: 248px;
+    line-height: 36px;
+    background: #FF7E00;
+    border-radius: 2px;
+    font-size:18px;
+    font-weight: 400px;
+    font-family: "微软雅黑";
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+#btn:hover {
+	color:#fff;
+	background:#FF8E20;
+}
+.Validform_right {
+    color: #71b83d;
+    padding-left: 20px;
+    background: url(../imgs/right.png) no-repeat left center;
+}
+.Validform_wrong {
+    color: red;
+    padding-left: 20px;
+    white-space: nowrap;
+    background: url(../imgs/error.png) no-repeat left center;
+}
+.reg_box input {
+    height: 32px;
+    width: 236px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #333;
+    vertical-align: middle;
+    border: #ccc 1px solid;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+ /*footer*/
+.footer {
+    position: relative;
+    width: 100%;
+    min-width: 1180px;
+    height: auto;
+}
+.footer_inner {
+    margin: 0 auto;
+    width: 980px;
+    padding: 10px 0;
+}
+.promise {
+    width: 100%;
+    height: 70px;
+    background: url(../imgs/shop_promise.png) no-repeat center;
+}
+.footer_content {
+    font-weight:400;
+    font-family:'Microsoft YaHei';
+    font-size:12px; 
+    color: #666;
+    text-align: right;
+}
+.footer_content a {
+    color: #666;
+}
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1px;
+    height: 4px;
+    z-index: 2;
+    width: 100%;
+    background: url(../imgs/subnav_shadow.png) repeat-x;
+    display: inline;
+    zoom: 1;
+}

@@ -1,0 +1,1328 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中国和田玉网</title>
+</head>
+ <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/page.js"></script>
+<body>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript">
+$(function(){
+	let username =getCookie("username");
+	if(username!=null){
+		$("#qqq").css("display","block");
+		$("#nologin").css("display","none");
+		$("#aaaa").html(username);
+		console.log(username);
+	}
+	$("#tuichu").click(function(){
+		removeCookie("username");
+		$("#nologin").css("display","block");
+		$("#qqq").css("display","none");
+		history.go(0);
+	})
+})	
+</script>
+<!-- header -->
+	<div id="header-top" class="header">
+		<div class="header-inner">
+			<div class="logo">
+				<a href="#">
+					<img src="imgs/logo.png" width="190" height="60" alt="中国和田玉网"/>
+				</a>
+			</div>
+			<div class="mainbav">
+				<ul>
+					<li>
+						<a class="current" href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">资讯</a>
+					</li>
+					<li>
+						<a href="shop.html">商城</a>
+					</li>
+					<li class="jadevip">
+						<a href="#" target="_blank">玉界臻品</a>
+					</li>
+					<li>
+						<a href="#">玉雕</a>
+					</li>
+					<li>
+						<a href="#">鉴定</a>
+					</li>
+					<li class="drop-menu-effect">
+						<a href="#">交流</a>
+						<ul class="dropmenu">
+                        <li><a href="#" target="_blank">和田玉问答</a>
+                        </li>
+                        <li>
+                        	<a href="#" target="_blank">和田玉论坛</a>
+                        </li>
+                        <li>
+                        	<a href="#" target="_blank">和田玉博客</a>
+                        </li>
+                    </ul>
+					</li>
+				</ul>
+			</div>
+			<div class=search>
+				<div class="inSearch" id="minSearch">
+					<div id="sForm">
+						<a onclick="javascript:formartsosubmit();" target="_parent" class="search_btn" href="javascript:;">搜索</a>
+						<div class="sRadius">
+							<div class="class">
+								<div class="classVal">
+									<b class="dropdown"></b>
+									<em id="sorts">资讯</em>
+								</div>
+								<ul class="classify">
+	                                <li>资讯</li>
+	                                <li>商城</li>
+	                                <li>玉雕</li>
+	                                <li>鉴定</li>
+	                                <li>问答</li>
+	                                <li>玉料</li>
+                            	</ul>
+							</div>
+							<input type="text" id="keyword" name="keyword" class="sInput sGray"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="member">
+    			<ul id="qqq">
+	            	<li flag="notice_box" class="notice"  data-flag="drop-menu-effect">
+	                	<a href="javascript:;" class="i-notice">
+	                    	<span class="yy-icon yy-notice">
+	                    		<b class="i-num unread">0</b>
+	                    	</span>
+	                	</a>
+	                	<div class="dropmenu">
+	                    	<div class="i-popup-top fix">
+	                        	<span class="fl">通知</span>
+	                        	<a href="#" class="fr">全部通知</a>
+	                   		 </div>
+	                    <ul class="i-popup-list fix">
+	                    </ul>
+
+	                </div>
+	            </li>
+	            <li flag="msg_box" class="notice" data-flag="drop-menu-effect">
+	                <a href="#;" class="i-notice">
+	                    <span class="yy-icon yy-msg"><b class="i-num unread">0</b></span>
+	                </a>
+	                <div class="dropmenu">
+	                    <div class="i-popup-top fix">
+	                        <span class="fl">站内信</span>
+	                        <a href="#" class="fr">全部站内信</a>
+	                    </div>
+
+	                    <ul class="i-popup-list fix">
+	                    </ul>
+	                </div>
+            	</li>
+            	<li class="login" data-flag="drop-menu-effect">
+                    <a id="arrow" href="#" target="_blank" class="i-member">
+                        <span id="aaaa"></span>
+                        <i class="arrow arrowB"></i>
+                    </a>
+                    <ul class="dropmenu">
+                        <li><a href="#">用户中心</a></li>
+                        <li><a href="#" target="_blank">我的主页</a></li>
+                        <li><a href="javascript:;" id="tuichu">退出登录</a></li>
+                    </ul>
+            	</li>
+    		</ul>
+    		<ul id="nologin">
+				<li class="nologin">
+					<a href="login.html">登录</a>
+					<a href="reg.html">注册</a>
+				</li>
+			</ul> 
+		</div>
+	</div>
+</div>
+<script src="js/SignHelper.js"></script>
+	<div class="nav_shadow"></div>
+<!-- content -->
+	<div class="main">
+		<div class="wrapper">
+			<div class="mt mb fix">
+			<!-- banner -->
+				<div id="focus_slider" class="index_focus">
+					<ul class="slides">
+						<li>
+							<a class="ig" href="#" target="_blank">
+								<img src="imgs/banner1.jpg" alt="国色天香" draggable="false"/>
+							</a>
+						</li>
+						<li>
+							<a class="ig" href="#" target="_blank">
+								<img src="imgs/banner2.jpg" alt="吉祥瓶" draggable="false"/>
+							</a>
+						</li>
+					</ul>
+					<ol class="flex-control-nav flex-control-paging">
+						<li></li>
+						<li></li>
+					</ol>
+					<ul class="flex-direction-nav">
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+		<script type="text/javascript">	
+			var i=0;
+			var timer;
+			$(function () {
+			$("#focus_slider").flexslider({
+            animation: "fade",
+            pauseOnHover: true,
+            slideshowSpeed: 4000,
+            animationSpeed: 400,
+        	});
+			})
+			</script>
+				<!-- news -->
+				<div class="index_news">
+					<div class="index_news_box">
+						<h5>推荐文章</h5>
+						<div class="index_hot_news">
+							<a href="#" title="意境，玉雕的灵魂所在" target="_blank">
+								<span>1.</span>
+								意境，玉雕的灵魂所在
+							</a>
+							<a href="#" title="良玉不琢 君子怀素" target="_blank">
+								<span>2.</span>
+								良玉不琢 君子怀素
+							</a>
+							<a href="#" title="案头雅物 文房水丞" target="_blank">
+								<span>3.</span>
+								案头雅物 文房水丞
+							</a>
+							<a href="#" title="取法自然 趣味天成——玉雕虫趣" target="_blank">
+								<span>4.</span>
+								取法自然 趣味天成——玉雕虫趣
+							</a>
+							<a href="#" title="2018年“天工奖”评选结果出炉" target="_blank">
+								<span>5.</span>
+								2018年“天工奖”评选结果出炉
+							</a>
+							<a href="#" title="诗意清欢 烟云生境——和田玉想插" target="_blank">
+								<span>5.</span>
+								诗意清欢 烟云生境——和田玉想插
+							</a>
+						</div>
+					</div>
+					<div class="index_news_box">
+						<h5>推广</h5>
+						<ul class="index_txt_news">
+							<li>
+								<a href="#" title="【玉雕大师官网】杨光玉雕作品guanwang" target="_blank">
+									【玉雕大师官网】杨光玉雕作品官网
+								</a>
+							</li>
+							<li>
+								<a href="#" title="【玉雕大师官网】冯钤雕作品guanwang" target="_blank">
+									【玉雕大师官网】冯钤玉雕作品官网
+								</a>
+							</li>
+							<li>
+								<a href="#" title="【玉雕大师官网】陈大军雕作品guanwang" target="_blank">
+									【玉雕大师官网】陈大军玉雕作品官网
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="index_news_box">
+						<h5>热点标签</h5>
+						<div class="index_hot_tag">
+	                <a href="#" title="和田玉在线鉴定" target="_blank">和田玉在线鉴定</a>
+	                <a href="#" title="鉴定师岳工" target="_blank">鉴定师岳工</a>
+	                <a href="#" title="和田玉问答" target="_blank">玉友问答</a>
+	                <a href="#" title="玉界臻品玉雕艺术中心" target="_blank">玉界臻品</a>
+	                <a href="#" title="玉雕大师作品" target="_blank">玉雕大师作品</a>
+	                <a href="#" title="玉雕大师" target="_blank">玉雕大师</a>
+	                <a href="#" title="和田玉商城" target="_blank">和田玉商城</a>
+	                <a href="#" title="和田玉知识" target="_blank">和田玉知识</a>
+	                <a href="#" title="和田玉价格" target="_blank">和田玉价格</a>
+	                <a href="#" title="和田玉鉴别" target="_blank">和田玉鉴别</a>
+	                <a href="#" title="和田玉鉴定证书查询" target="_blank">和田玉鉴定证书查询</a>
+	            		</div>
+					</div>
+				</div>
+			</div>
+			<!-- nav -->
+			<div class="index_title">
+				<h3>
+					<a href="#" target="_blank">和田玉商城</a>
+				</h3>
+				<ul class="index_title_menu">
+					<li>
+						<a href="#" target="_blank">和田玉挂件</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉玉牌</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉把件</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉手镯</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉摆件</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉器具</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉玉山子</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">更多</a>
+					</li>
+				</ul>
+			</div>
+			<!-- shopping -->
+			<div class="shop_title">
+				<div class="hotgoods">
+					<a href="#" target="_blank">
+						<img src="imgs/1011496074.jpg" width="240" height="300" alt="（翠青）白玉牌-多交好运">
+					</a>
+					<a href="#" target="_blank">
+						<img src="imgs/1554574037.jpg" width="240" height="300" alt="巧雕手镯">
+					</a>
+				</div>
+			</div>
+			<div class="hotgoods_box">
+				<ul class="hotgoods_list">
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/chah.jpg" alt="白玉-花卉纹饰把玩壶">
+							</a>
+						</div>
+						<h3>
+							<a href="#" title="白玉-花卉纹饰把玩壶" target="_blank">白玉-花卉纹饰把玩壶</a>
+						</h3>
+						<p>￥45000</p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/chah.jpg" alt="白玉-花卉纹饰把玩壶">
+							</a>
+						</div>
+						<h3>
+							<a href="#" title="白玉-花卉纹饰把玩壶" target="_blank">白玉-花卉纹饰把玩壶</a>
+						</h3>
+						<p>￥45000</p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/chah.jpg" alt="白玉-花卉纹饰把玩壶">
+							</a>
+						</div>
+						<h3>
+							<a href="#" title="白玉-花卉纹饰把玩壶" target="_blank">白玉-花卉纹饰把玩壶</a>
+						</h3>
+						<p>￥45000</p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/chah.jpg" alt="白玉-花卉纹饰把玩壶">
+							</a>
+						</div>
+						<h3>
+							<a href="#" title="白玉-花卉纹饰把玩壶" target="_blank">白玉-花卉纹饰把玩壶</a>
+						</h3>
+						<p>￥45000</p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/chah.jpg" alt="白玉-花卉纹饰把玩壶">
+							</a>
+						</div>
+						<h3>
+							<a href="#" title="白玉-花卉纹饰把玩壶" target="_blank">白玉-花卉纹饰把玩壶</a>
+						</h3>
+						<p>￥45000</p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/chah.jpg" alt="白玉-花卉纹饰把玩壶">
+							</a>
+						</div>
+						<h3>
+							<a href="#" title="白玉-花卉纹饰把玩壶" target="_blank">白玉-花卉纹饰把玩壶</a>
+						</h3>
+						<p>￥45000</p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/chah.jpg" alt="白玉-花卉纹饰把玩壶">
+							</a>
+						</div>
+						<h3>
+							<a href="#" title="白玉-花卉纹饰把玩壶" target="_blank">白玉-花卉纹饰把玩壶</a>
+						</h3>
+						<p>￥45000</p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/chah.jpg" alt="白玉-花卉纹饰把玩壶">
+							</a>
+						</div>
+						<h3>
+							<a href="#" title="白玉-花卉纹饰把玩壶" target="_blank">白玉-花卉纹饰把玩壶</a>
+						</h3>
+						<p>￥45000</p>
+					</li>
+				</ul>
+			</div>
+			<div class="index_title">
+				<h3>
+					<a href="#" target="_blank">玉雕师官网</a>
+				</h3>
+				<ul class="index_title_menu">
+					<li>
+						<a href="#" target="_blank">玉雕大师</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">新锐玉雕师</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 玉雕师 -->
+			<div id="artist_slider" class="flexslider">
+				<div class="flex-viewport">
+					<ul class="slides">
+						<li>
+                    		<a href="#" target="_blank">
+								<img src="imgs/fenqian.jpg" draggable="false"/>
+								<p>
+                            		<strong>冯钤/</strong>扬州玉雕工艺美术大师，其作品构思巧妙，俏色运用独到，富有水墨、江南艺韵，将工艺与艺术很好的融为了一体。
+                        		</p>
+							</a>
+						</li>
+						<li>
+                    		<a href="#" target="_blank">
+                        		<img src="imgs/dajun.jpg" alt="陈大军" draggable="false"/>
+                        		<p>
+                            		<strong>陈大军/</strong>扬州玉雕工艺美术大师； 以炉瓶器皿创作见长，其玉雕作品造型讲究、线条流畅、纹饰华美、雕琢精致、别具一格。
+                        		</p>
+                    		</a>
+                		</li>
+                		<li>
+                    		<a href="#"  target="_blank">
+                        		<img src="imgs/wjg.jpg" alt="王金高" draggable="false">
+                        		<p>
+                            		<strong>王金高/</strong>中国玉石雕刻大师、扬州市工艺美术大师，专注炉瓶器皿的设计雕琢；作品古朴端庄，沉稳大气，但质朴中不失精美、厚重里带有灵秀。
+                        		</p>
+                    		</a>
+                		</li>
+                		<li>
+		                    <a href="#" target="_blank">
+		                        <img src="imgs/ww.jpg" alt="万伟" draggable="false">
+		                        <p>
+		                            <strong>万伟/</strong>上海海派玉雕大师、国家玉雕高级技师，以人物、花鸟为主要创作题材，构图布局注重意境和气韵，工法伶俐、刚柔相济。
+		                        </p>
+                    		</a>
+                		</li>
+                		<li>
+		                    <a href="#" target="_blank">
+		                        <img src="imgs/yg.jpg" alt="杨光" draggable="false">
+		                        <p>
+		                            <strong>杨光/</strong>中国玉石雕刻大师、江苏省工艺美术名人，扬州市工艺美术大师，获得中国轻工业联合会等联合颁发的“中国玉雕艺术大师”荣誉称号。
+		                        </p>
+		                    </a>
+		                </li>
+		                <li>
+                    		<a href="#" target="_blank">
+                        		<img src="imgs/zj.jpg" alt="张静" draggable="false">
+                        		<p>
+                            		<strong>张静/</strong>扬州玉雕工艺美术大师，玉雕创作题材不拘一格，尤其在中小件作品中，透出了质朴自然而又灵秀蕴藉的风格。
+                        		</p>
+                    		</a>
+                		</li>
+                		<li>
+		                    <a href="#" target="_blank">
+		                        <img src="imgs/yxj.jpg" alt="殷小金" draggable="false">
+		                        <p>
+		                            <strong>殷小金/</strong>江苏省玉石雕刻大师；性情之人，尽兴、随性，作品却细腻温婉，写意自然，意境柔美，玉界有“花鸟传情”的美誉
+		                        </p>
+		                    </a>
+                		</li>
+					</ul>
+				</div>
+				<ol class="flex-control-nav flex-control-paging">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+				<ul class="flex-direction-nav">
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+    		$(function () {
+       			 $("#artist_slider").flexslider({
+		            animation: "slide",
+		            itemWidth: 584,
+		            itemMargin: 12,
+		            minItems: 1,
+		            maxItems: 2,
+		            pauseOnHover: true,
+		            //pausePlay: true
+		        });
+		    });
+</script>
+			<div class="index_title">
+				<h3>
+					<a href="#" target="_blank">玉雕名家作品</a>
+				</h3>
+				<ul class="index_title_menu">
+					<li>
+						<a href="#" target="_blank">挂件</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">玉牌</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">手把件</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">摆件</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">器皿</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">山子</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">全部</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 名家作品 -->
+			<div class="piclist">
+				<ul>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/my.jpg" alt="墨玉子料把牌-双鱼戏荷"/>
+							</a>
+						</div>
+						<h3 class="p_ydname">
+                        	<a href="#" title="墨玉子料把牌-双鱼戏荷" target="_blank">墨玉子料把牌-双鱼戏荷</a>
+                    	</h3>
+                    	<p class="p_author">玉雕作者：
+                    		<a href="#" target="_blank">张静</a>
+                    	</p>
+                    	<p class="p_action">
+                        	<span class="icon iconfont icon-zhengyan">
+                        		<span>3380</span>
+                        	</span>
+                        	<span class="icon iconfont icon-weibiaoti-">
+                        		<span class="cy_cmt_count">3</span>
+                        	</span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            	<span class="likecount">0</span>
+                        	</a>
+                   	 	</p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/my.jpg" alt="墨玉子料把牌-双鱼戏荷"/>
+							</a>
+						</div>
+						<h3 class="p_ydname">
+                        	<a href="#" title="墨玉子料把牌-双鱼戏荷" target="_blank">墨玉子料把牌-双鱼戏荷</a>
+                    	</h3>
+                    	<p class="p_author">玉雕作者：
+                    		<a href="#" target="_blank">张静</a>
+                    	</p>
+                    	<p class="p_action">
+                        <span class="icon iconfont icon-zhengyan">
+                        	<span>3380</span>
+                        </span>
+                        <span class="icon iconfont icon-weibiaoti-">
+                        	<span class="cy_cmt_count">3</span>
+                        </span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            <span class="likecount">0</span>
+                        </a>
+                    </p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/my.jpg" alt="墨玉子料把牌-双鱼戏荷"/>
+							</a>
+						</div>
+						<h3 class="p_ydname">
+                        	<a href="#" title="墨玉子料把牌-双鱼戏荷" target="_blank">墨玉子料把牌-双鱼戏荷</a>
+                    	</h3>
+                    	<p class="p_author">玉雕作者：
+                    		<a href="#" target="_blank">张静</a>
+                    	</p>
+                    	<p class="p_action">
+                        <span class="icon iconfont icon-zhengyan">
+                        	<span>3380</span>
+                        </span>
+                        <span class="icon iconfont icon-weibiaoti-">
+                        	<span class="cy_cmt_count">3</span>
+                        </span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            <span class="likecount">0</span>
+                        </a>
+                    </p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/my.jpg" alt="墨玉子料把牌-双鱼戏荷"/>
+							</a>
+						</div>
+						<h3 class="p_ydname">
+                        	<a href="#" title="墨玉子料把牌-双鱼戏荷" target="_blank">墨玉子料把牌-双鱼戏荷</a>
+                    	</h3>
+                    	<p class="p_author">玉雕作者：
+                    		<a href="#" target="_blank">张静</a>
+                    	</p>
+                    	<p class="p_action">
+                        <span class="icon iconfont icon-zhengyan">
+                        	<span>3380</span>
+                        </span>
+                        <span class="icon iconfont icon-weibiaoti-">
+                        	<span class="cy_cmt_count">3</span>
+                        </span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            <span class="likecount">0</span>
+                        </a>
+                    </p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/my.jpg" alt="墨玉子料把牌-双鱼戏荷"/>
+							</a>
+						</div>
+						<h3 class="p_ydname">
+                        	<a href="#" title="墨玉子料把牌-双鱼戏荷" target="_blank">墨玉子料把牌-双鱼戏荷</a>
+                    	</h3>
+                    	<p class="p_author">玉雕作者：
+                    		<a href="#" target="_blank">张静</a>
+                    	</p>
+                    	<p class="p_action">
+                        <span class="icon iconfont icon-zhengyan">
+                        	<span>3380</span>
+                        </span>
+                        <span class="icon iconfont icon-weibiaoti-">
+                        	<span class="cy_cmt_count">3</span>
+                        </span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            <span class="likecount">0</span>
+                        </a>
+                    </p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/my.jpg" alt="墨玉子料把牌-双鱼戏荷"/>
+							</a>
+						</div>
+						<h3 class="p_ydname">
+                        	<a href="#" title="墨玉子料把牌-双鱼戏荷" target="_blank">墨玉子料把牌-双鱼戏荷</a>
+                    	</h3>
+                    	<p class="p_author">玉雕作者：
+                    		<a href="#" target="_blank">张静</a>
+                    	</p>
+                    	<p class="p_action">
+                        <span class="icon iconfont icon-zhengyan">
+                        	<span>3380</span>
+                        </span>
+                        <span class="icon iconfont icon-weibiaoti-">
+                        	<span class="cy_cmt_count">3</span>
+                        </span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            <span class="likecount">0</span>
+                        </a>
+                    </p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/my.jpg" alt="墨玉子料把牌-双鱼戏荷"/>
+							</a>
+						</div>
+						<h3 class="p_ydname">
+                        	<a href="#" title="墨玉子料把牌-双鱼戏荷" target="_blank">墨玉子料把牌-双鱼戏荷</a>
+                    	</h3>
+                    	<p class="p_author">玉雕作者：
+                    		<a href="#" target="_blank">张静</a>
+                    	</p>
+                    	<p class="p_action">
+                        <span class="icon iconfont icon-zhengyan">
+                        	<span>3380</span>
+                        </span>
+                        <span class="icon iconfont icon-weibiaoti-">
+                        	<span class="cy_cmt_count">3</span>
+                        </span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            <span class="likecount">0</span>
+                        </a>
+                    </p>
+					</li>
+					<li>
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/my.jpg" alt="墨玉子料把牌-双鱼戏荷"/>
+							</a>
+						</div>
+						<h3 class="p_ydname">
+                        	<a href="#" title="墨玉子料把牌-双鱼戏荷" target="_blank">墨玉子料把牌-双鱼戏荷</a>
+                    	</h3>
+                    	<p class="p_author">玉雕作者：
+                    		<a href="#" target="_blank">张静</a>
+                    	</p>
+                    	<p class="p_action">
+                        <span class="icon iconfont icon-zhengyan">
+                        	<span>3380</span>
+                        </span>
+                        <span class="icon iconfont icon-weibiaoti-">
+                        	<span class="cy_cmt_count">3</span>
+                        </span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            <span class="likecount">0</span>
+                        </a>
+                    </p>
+					</li>
+				</ul>
+			</div>
+			<div class="index_title">
+				<h3>
+					<a href="#" target="_blank">和田玉鉴定</a>
+				</h3>
+				<ul class="index_title_menu">
+					<li>
+						<a href="#" target="_blank">鉴定机构</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">鉴定证书查询</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉分类</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉在线鉴定</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 鉴定 -->
+			<div class="index_ask">
+				<ul>
+                	<li>
+	                	<a href="#" target="_blank">岳老师:您好! 能达到黄玉吗？材质如何？谢谢！
+	    				</a>
+	    				<span> [2014-04-23]</span>
+	    			</li>
+	                <li>
+	                	<a href="#" target="_blank">
+	                	您好，我买的这个镯子说是新疆白玉，花1500，但是没有...
+	                	</a>
+	                	<span> [2014-04-22]</span>
+	                </li>
+	                <li>
+	                	<a href="#" target="_blank">岳老师你好，我在野外发现一个矿带，带回的样品如图，经地...</a>
+	                	<span> [2014-04-21]</span>
+	                </li>
+	                <li>
+	                	<a href="" target="_blank">岳工，您好！请帮助鉴定一下这块玉石的等级。
+	                	</a>
+	                	<span> [2014-02-24]</span>
+	                </li>
+	                <li>
+	                	<a href="" target="_blank">这是网上卖的玉镯，说是高端脂白俄料的，价格近2万，请您...</a>
+	                	<span> [2013-06-05]</span> 
+	                </li>
+	                <li>
+	                	<a href="#" target="_blank">岳老师:您好! 能达到黄玉吗？材质如何？谢谢！
+	    				</a>
+	    				<span> [2014-04-23]</span>
+	    			</li>
+	                <li>
+	                	<a href="#" target="_blank">
+	                	您好，我买的这个镯子说是新疆白玉，花1500，但是没有...
+	                	</a>
+	                	<span> [2014-04-22]</span>
+	                </li>
+	                <li>
+	                	<a href="#" target="_blank">岳老师你好，我在野外发现一个矿带，带回的样品如图，经地...</a>
+	                	<span> [2014-04-21]</span>
+	                </li>
+	                <li>
+	                	<a href="" target="_blank">岳工，您好！请帮助鉴定一下这块玉石的等级。
+	                	</a>
+	                	<span> [2014-02-24]</span>
+	                </li>
+	                <li>
+	                	<a href="" target="_blank">这是网上卖的玉镯，说是高端脂白俄料的，价格近2万，请您...</a>
+	                	<span> [2013-06-05]</span> 
+	                </li>
+   				</ul>
+				<ul>
+                	<li>
+	                	<a href="#" target="_blank">岳老师:您好! 能达到黄玉吗？材质如何？谢谢！
+	    				</a>
+	    				<span> [2014-04-23]</span>
+	    			</li>
+	                <li>
+	                	<a href="#" target="_blank">
+	                	您好，我买的这个镯子说是新疆白玉，花1500，但是没有...
+	                	</a>
+	                	<span> [2014-04-22]</span>
+	                </li>
+	                <li>
+	                	<a href="#" target="_blank">岳老师你好，我在野外发现一个矿带，带回的样品如图，经地...</a>
+	                	<span> [2014-04-21]</span>
+	                </li>
+	                <li>
+	                	<a href="" target="_blank">岳工，您好！请帮助鉴定一下这块玉石的等级。
+	                	</a>
+	                	<span> [2014-02-24]</span>
+	                </li>
+	                <li>
+	                	<a href="" target="_blank">这是网上卖的玉镯，说是高端脂白俄料的，价格近2万，请您...</a>
+	                	<span> [2013-06-05]</span> 
+	                </li>
+	                <li>
+	                	<a href="#" target="_blank">岳老师:您好! 能达到黄玉吗？材质如何？谢谢！
+	    				</a>
+	    				<span> [2014-04-23]</span>
+	    			</li>
+	                <li>
+	                	<a href="#" target="_blank">
+	                	您好，我买的这个镯子说是新疆白玉，花1500，但是没有...
+	                	</a>
+	                	<span> [2014-04-22]</span>
+	                </li>
+	                <li>
+	                	<a href="#" target="_blank">岳老师你好，我在野外发现一个矿带，带回的样品如图，经地...</a>
+	                	<span> [2014-04-21]</span>
+	                </li>
+	                <li>
+	                	<a href="" target="_blank">岳工，您好！请帮助鉴定一下这块玉石的等级。
+	                	</a>
+	                	<span> [2014-02-24]</span>
+	                </li>
+	                <li>
+	                	<a href="" target="_blank">这是网上卖的玉镯，说是高端脂白俄料的，价格近2万，请您...</a>
+	                	<span> [2013-06-05]</span> 
+	                </li>
+   				</ul>
+			</div>
+			<div class="index_title">
+				<h3>
+					<a href="#" target="_blank">和田玉文集</a>
+				</h3>
+				<ul class="index_title_menu">
+					<li>
+						<a href="#" target="_blank">中国玉文化</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉知识</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉收藏</a>
+					</li>
+					<li>
+						<a href="#" target="_blank">和田玉鉴别</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 新闻文集 -->
+			<div class="piclist newslist">
+				<ul>
+					<li class="one">
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/yd.jpg" alt="意境，玉雕的灵魂所在"/>
+							</a>
+						</div>
+						<div class="newsbox">
+							<a class="newstitle" target="_blank" href="#">意境，玉雕的灵魂所在</a>
+							<span class="newsdate">
+								日期：2019-01-02 来源：玉界臻品
+							</span>
+							<p class="newscontent">
+                            在当代的玉雕艺术中，一些好的玉雕作品表现出以神统形，以意融形，形神结合乃至神超形越的艺术境界。
+                        	</p>
+						</div>
+						<p class="p_action">
+                        	<span class="icon iconfont icon-zhengyan">
+                        		<span>3380</span>
+                        	</span>
+                        	<span class="icon iconfont icon-weibiaoti-">
+                        		<span class="cy_cmt_count">3</span>
+                        	</span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            	<span class="likecount">0</span>
+                        	</a>
+                   	 	</p>
+					</li>
+					<li class="one">
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/yd.jpg" alt="意境，玉雕的灵魂所在"/>
+							</a>
+						</div>
+						<div class="newsbox">
+							<a class="newstitle" target="_blank" href="#">意境，玉雕的灵魂所在</a>
+							<span class="newsdate">
+								日期：2019-01-02 来源：玉界臻品
+							</span>
+							<p class="newscontent">
+                            在当代的玉雕艺术中，一些好的玉雕作品表现出以神统形，以意融形，形神结合乃至神超形越的艺术境界。
+                        	</p>
+						</div>
+						<p class="p_action">
+                        	<span class="icon iconfont icon-zhengyan">
+                        		<span>3380</span>
+                        	</span>
+                        	<span class="icon iconfont icon-weibiaoti-">
+                        		<span class="cy_cmt_count">3</span>
+                        	</span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            	<span class="likecount">0</span>
+                        	</a>
+                   	 	</p>
+					</li>
+					<li class="one">
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/yd.jpg" alt="意境，玉雕的灵魂所在"/>
+							</a>
+						</div>
+						<div class="newsbox">
+							<a class="newstitle" target="_blank" href="#">意境，玉雕的灵魂所在</a>
+							<span class="newsdate">
+								日期：2019-01-02 来源：玉界臻品
+							</span>
+							<p class="newscontent">
+                            在当代的玉雕艺术中，一些好的玉雕作品表现出以神统形，以意融形，形神结合乃至神超形越的艺术境界。
+                        	</p>
+						</div>
+						<p class="p_action">
+                        	<span class="icon iconfont icon-zhengyan">
+                        		<span>3380</span>
+                        	</span>
+                        	<span class="icon iconfont icon-weibiaoti-">
+                        		<span class="cy_cmt_count">3</span>
+                        	</span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            	<span class="likecount">0</span>
+                        	</a>
+                   	 	</p>
+					</li>
+					<li class="one">
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/yd.jpg" alt="意境，玉雕的灵魂所在"/>
+							</a>
+						</div>
+						<div class="newsbox">
+							<a class="newstitle" target="_blank" href="#">意境，玉雕的灵魂所在</a>
+							<span class="newsdate">
+								日期：2019-01-02 来源：玉界臻品
+							</span>
+							<p class="newscontent">
+                            在当代的玉雕艺术中，一些好的玉雕作品表现出以神统形，以意融形，形神结合乃至神超形越的艺术境界。
+                        	</p>
+						</div>
+						<p class="p_action">
+                        	<span class="icon iconfont icon-zhengyan">
+                        		<span>3380</span>
+                        	</span>
+                        	<span class="icon iconfont icon-weibiaoti-">
+                        		<span class="cy_cmt_count">3</span>
+                        	</span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            	<span class="likecount">0</span>
+                        	</a>
+                   	 	</p>
+					</li>
+					<li class="one">
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/yd.jpg" alt="意境，玉雕的灵魂所在"/>
+							</a>
+						</div>
+						<div class="newsbox">
+							<a class="newstitle" target="_blank" href="#">意境，玉雕的灵魂所在</a>
+							<span class="newsdate">
+								日期：2019-01-02 来源：玉界臻品
+							</span>
+							<p class="newscontent">
+                            在当代的玉雕艺术中，一些好的玉雕作品表现出以神统形，以意融形，形神结合乃至神超形越的艺术境界。
+                        	</p>
+						</div>
+						<p class="p_action">
+                        	<span class="icon iconfont icon-zhengyan">
+                        		<span>3380</span>
+                        	</span>
+                        	<span class="icon iconfont icon-weibiaoti-">
+                        		<span class="cy_cmt_count">3</span>
+                        	</span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            	<span class="likecount">0</span>
+                        	</a>
+                   	 	</p>
+					</li>
+					<li class="one">
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/yd.jpg" alt="意境，玉雕的灵魂所在"/>
+							</a>
+						</div>
+						<div class="newsbox">
+							<a class="newstitle" target="_blank" href="#">意境，玉雕的灵魂所在</a>
+							<span class="newsdate">
+								日期：2019-01-02 来源：玉界臻品
+							</span>
+							<p class="newscontent">
+                            在当代的玉雕艺术中，一些好的玉雕作品表现出以神统形，以意融形，形神结合乃至神超形越的艺术境界。
+                        	</p>
+						</div>
+						<p class="p_action">
+                        	<span class="icon iconfont icon-zhengyan">
+                        		<span>3380</span>
+                        	</span>
+                        	<span class="icon iconfont icon-weibiaoti-">
+                        		<span class="cy_cmt_count">3</span>
+                        	</span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            	<span class="likecount">0</span>
+                        	</a>
+                   	 	</p>
+					</li>
+					<li class="one">
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/yd.jpg" alt="意境，玉雕的灵魂所在"/>
+							</a>
+						</div>
+						<div class="newsbox">
+							<a class="newstitle" target="_blank" href="#">意境，玉雕的灵魂所在</a>
+							<span class="newsdate">
+								日期：2019-01-02 来源：玉界臻品
+							</span>
+							<p class="newscontent">
+                            在当代的玉雕艺术中，一些好的玉雕作品表现出以神统形，以意融形，形神结合乃至神超形越的艺术境界。
+                        	</p>
+						</div>
+						<p class="p_action">
+                        	<span class="icon iconfont icon-zhengyan">
+                        		<span>3380</span>
+                        	</span>
+                        	<span class="icon iconfont icon-weibiaoti-">
+                        		<span class="cy_cmt_count">3</span>
+                        	</span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            	<span class="likecount">0</span>
+                        	</a>
+                   	 	</p>
+					</li>
+					<li class="one">
+						<div class="imgbox">
+							<a href="#" target="_blank">
+								<img src="imgs/yd.jpg" alt="意境，玉雕的灵魂所在"/>
+							</a>
+						</div>
+						<div class="newsbox">
+							<a class="newstitle" target="_blank" href="#">意境，玉雕的灵魂所在</a>
+							<span class="newsdate">
+								日期：2019-01-02 来源：玉界臻品
+							</span>
+							<p class="newscontent">
+                            在当代的玉雕艺术中，一些好的玉雕作品表现出以神统形，以意融形，形神结合乃至神超形越的艺术境界。
+                        	</p>
+						</div>
+						<p class="p_action">
+                        	<span class="icon iconfont icon-zhengyan">
+                        		<span>3380</span>
+                        	</span>
+                        	<span class="icon iconfont icon-weibiaoti-">
+                        		<span class="cy_cmt_count">3</span>
+                        	</span>
+                        	<a class="icon iconfont icon-xinheart118" data-postid=""  href="javascript:;" title="喜欢">
+                            	<span class="likecount">0</span>
+                        	</a>
+                   	 	</p>
+					</li>
+				</ul>
+			</div>
+			<div class="index_title title">
+				<h3>
+					<a href="#" target="_blank">和田玉品牌商家</a>
+				</h3>
+				<ul class="index_title_menu">
+					<li>
+						<a href="#" target="_blank">希望入驻中国和田玉网吗？点击了解...</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 商家 -->
+			<div id="brand_slider" class="flexslider">
+				<div class="flex-viewport">
+					<ul class="slide">
+        				<li>
+        					<a href="#" target="_blank">
+        						<img src="imgs/logo_bj.png" alt="玉界臻品" draggable="false">
+        					</a>
+        				</li>
+                		<li>
+                    		<a href="#" target="_blank">
+                        		<img src="imgs/logo_htmyy.png" alt="和阗美玉苑" draggable="false">
+                   			</a>
+                		</li>
+                		<li>
+                    		<a href="#" target="_blank">
+	                        	<img src="imgs/logo_qyx.png" alt="沁玉轩" draggable="false">
+	                   		</a>
+		                </li>
+		                <li>
+		                    <a href="#" target="_blank">
+		                        <img src="imgs/jyy.png" alt="锦玉源" draggable="false"">
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#" target="_blank">
+		                        <img src="imgs/yjsf.png" alt="玉熹石府" draggable="false"">
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#" target="_blank">
+		                        <img src="imgs/hm.png" alt="汇美和田玉" draggable="false">
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#" target="_blank">
+		                        <img src="imgs/logo_jyy.png" alt="津玉缘" draggable="false">
+		                    </a>
+		                </li>
+    				</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+			    $(function () {
+			        $("#brand_slider").flexslider({
+			            animation: "slide",
+			            itemWidth: 150,
+			            itemMargin: 0,
+			            minItems: 1,
+			            maxItems: 7,
+			            directionNav: false,
+			            pauseOnHover: true,
+			            slideshowSpeed: 5000
+			        });
+			        $("#brand_slider li img").css("opacity", 1).hover(function () {
+			            $(this).animate({ "opacity": "0.6" }, 300);
+			        }, function () {
+			            $(this).animate({ "opacity": "1" }, 300);
+			        });
+			    });
+			</script>
+			<div class="index_title">
+				<h3>
+					<a href="#" target="_blank">友情链接</a>
+				</h3>
+			</div>
+			<!-- 友情链接 -->
+			<div class="site_link">
+	            <a href="http://www.jadevip.cn/" target="_blank">玉界臻品</a>
+	            <a href="http://www.chinajade.cn/baoxie/" target="_blank">新疆宝协</a>
+	            <a href="http://www.chinajade.cn/jianding/" target="_blank">和田玉鉴定证书查询</a>
+	            <a href="http://www.hetaoquan.com/" target="_blank">文玩核桃网</a>
+	            <a href="http://www.woiyu.com/" target="_blank">爱玉珠宝网</a>
+	            <a href="http://www.bloves.com/" target="_blank">钻石</a>
+	            <a href="http://www.jadewd.com/" target="_blank">卫东翡翠网</a>
+	            <a href="http://www.jades.cn/" target="_blank">中华玉网</a>
+	            <a href="http://www.zb31.com/" target="_blank">世界珠宝网</a>
+	            <a href="http://bbs.nanhong.com/" target="_blank">南红玛瑙</a>
+	            <a href="http://www.fojiaoyongpin.com/" target="_blank">佛教用品</a>
+	            <a href="http://www.hc699.com/" target="_blank">翡翠手镯</a>
+	            <a href="http://www.ilovezuan.com/" target="_blank">钻戒</a>
+	            <a href="http://www.colbao.com/" target="_blank">妙瑞可翡翠</a>
+	            <a href="http://www.shuijingcn.com/" target="_blank">水晶</a>
+	            <a href="http://www.giabbs.com/" target="_blank">珠宝和田玉</a>
+	            <a href="http://www.shuijingyibai.com/" target="_blank">天然水晶</a>
+	            <a href="http://www.li63.com/" target="_blank">送礼网</a>
+	            <a href="http://www.binlun.com.cn/" target="_blank">手表</a>
+	            <a href="http://www.lipin-bj.cn/" target="_blank">礼品</a>
+	            <a href="http://www.inshion.com/" target="_blank">运动服</a>
+	            <a href="http://www.dionly.com/" target="_blank">钻戒</a>
+	            <a href="http://www.hygx.org/" target="_blank">华韵国学</a>
+	            <a href="http://www.xfsxw.com/" target="_blank">先锋寿山石网</a>
+	            <a href="http://www.sh1188.com/" target="_blank">画家村字画网</a>
+	            <a href="http://www.328f.cn/" target="_blank">红木家具图片</a>
+	            <a href="http://www.yipihuo.com/" target="_blank">义乌小商品批发市场</a>
+	            <a href="http://www.crd.cn/" target="_blank">钻石戒指</a>
+	            <a href="http://watch.pclady.com.cn/" target="_blank">手表</a>
+	            <a href="http://luxury.pclady.com.cn/" target="_blank">奢品</a>
+	            <a href="http://product.onlylady.com/" target="_blank">奢侈品</a>
+	            <a href="http://www.kyp.com/" target="_blank">快易拍</a>
+	            <a href="http://www.wsqs.com.cn/" target="_blank">冲锋衣</a>
+	            <a href="http://www.zisha.com/" target="_blank">紫砂壶</a>
+	            <a href="http://www.artww.com/" target="_blank">艺粹网</a>
+	            <a href="http://www.yishu.com/" target="_blank">中国艺术网</a>
+	            <a href="http://www.yimianmian.com/" target="_blank">意绵绵珠宝</a>
+	            <a href="http://www.gucn.com/" target="_blank">中华古玩网</a>
+	            <a href="http://www.ozhibao.com/" target="_blank">欧致宝</a>
+	            <a href="http://www.yuyuan.cc/" target="_blank">玉缘阁和田玉</a>
+	            <a href="http://www.airmb.com/" target="_blank">钱币收藏</a>
+	            <a href="http://www.zhuoyixuan.com/" target="_blank">琢艺轩和田玉</a>
+	            <a href="http://jd.cang.com/" target="_blank">鉴定估价</a>
+	            <a href="http://www.13520.com.cn/" target="_blank">求婚钻戒</a>
+	            <a href="http://www.jcang.com.cn/" target="_blank">九藏天下</a>
+	            <a href="http://yuhairenyuan.tmall.com/" target="_blank" rel="nofollow">玉缘和田玉</a>
+	            <a href="http://www.lovenus.cn/ " target="_blank">钻戒品牌</a>
+	            <a href="http://www.letao-cn.com/" target="_blank">雅虎日本</a>
+	            <a href="http://www.cguwan.com/" target="_blank">中国古玩网</a>
+	            <a href="http://www.sctx.com/" target="_blank">收藏天下</a>
+	            <a href="http://www.glosspp.com/" target="_blank">时尚品牌网</a>
+	            <a href="http://www.lvenr.com/" target="_blank">南红</a>
+	            <a href="http://lipin.huangye88.com/" target="_blank">中国礼品网</a>
+	            <a href="http://www.58gem.com" target="_blank">中国珠宝网</a>
+            	<p>
+                友情链接交换：珠宝玉器、艺术收藏类，百度收录3000以上，百度权重：≥4，pr值≥4，建站一年以上，符合条件请QQ在线留言:
+                	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3137128487&amp;site=www.chianjade.cn.cn&amp;menu=yes">
+                		<img border="0" src="imgs/qq.png" alt="点击这里给我发消息" title="点击这里给我发消息">
+                	</a>
+            	</p>
+        	</div>
+		</div>
+	</div>
+<!-- footer -->
+	<div class="footer">
+		<div class=footer_inner>
+			<div class="footer_follow">
+				<ul class="fix">
+					<li>
+						<div class="weixing">
+							<b>微信公众号</b>
+							公众号：玉界臻品服务号
+							<br>
+                            证书查询/玉器选购/微信竞拍
+						</div>
+					</li>
+					<li>
+						<div class="weixing_ding">
+							<b>微信订阅号</b>
+							公众号：玉界臻品和田玉
+							<br>
+                            玉器鉴赏/知识分享
+						</div>
+					</li>
+					<li>
+						<b>官方微博</b>
+						新浪微博：@中国和田玉网
+						<br>
+                        weibo.com/chinajade888
+					</li>
+					<li>
+						<b>联系 中国和田玉网</b>
+						服务电话：0514-87225756
+						<br>
+						在线客服:
+						<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3137128487&amp;site=www.chianjade.cn.cn&amp;menu=yes" target="_blank">
+							<img src="imgs/qq.png" alt="点击这里给我发送消息" title="点击这里给我发送消息">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_link">
+				<a href="#" target="_blank">关于我们</a>
+				<span class="f_split">|</span>
+				<a href="#" target="_blank">玉界臻品</a>
+				<span class="f_split">|</span>
+				<a href="#" target="_blank">商家入驻</a>
+				<span class="f_split">|</span>
+				<a href="#" target="_blank">玉雕师入驻</a>
+				<span class="f_split">|</span>
+				<a href="#" target="_blank">推广营销服务</a>
+				<br>
+				<span class="footer_bottom">
+					网站运营：
+					<a href="#" target="_blank">
+						江苏玉界电子商务有限公司
+					</a>
+					&nbsp; 服务电话：0514-87225756<br>
+					地址：江苏省扬州市观潮路399号江南一品园17幢4楼  Email：info@chinajade.cn
+				</span>
+			</div>
+			<div class="footer_copyright">
+				&copy;2004-2017
+				<a href="#" target="_blank">中国和田玉网
+				</a>
+				<a href="#" target="_blank">www.chinajade.cn
+				</a>
+				— 中国和田玉行业门户<br>
+				<span class="footer_bottom">
+					网站主办：
+					<a href="#" target="_blank">
+						新疆宝玉石检测研究中心
+					</a>
+					&nbsp;
+					<a href="#" target="_blank">
+						新疆珠宝玉石首饰行业协会
+					</a>
+					&nbsp;
+					<a href="#" target="_blank">
+						江苏玉界电子商务有限公司
+					</a><br>
+					网站备案号：
+					<a href="#" target="_blank">
+						苏ICP备13011983号-2
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div id="topcontrol" title="返回顶部"><img src="imgs/jt.gif"></div>
+	<script>
+		$(function() {
+        $("#topcontrol").hide();
+        $(window).bind('scroll',function(){
+            if($(window).scrollTop()<=200){
+                $("#topcontrol").fadeOut(800);
+           	}else{
+                $("#topcontrol").fadeIn(800);
+            }
+        });
+        $("#topcontrol").bind("click",function(){
+            $('html, body').animate({scrollTop: 0},300);
+        });
+   });
+	</script>
+</body>
+</html>

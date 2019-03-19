@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员登录_中国和田玉网</title>
+</head>
+<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="header_inner"> 
+			<a href="#" class="logo">
+				<img src="imgs/logo1.png" alt="中国和田玉网">
+			</a>
+			<h2 class="header_title">欢迎登录</h2>
+		</div>
+	</div>
+<!-- content -->
+	<div class="main login_bg">
+    <div class="login_bg_gg">
+        <div class="wrapper">
+            <div class="login_gg">
+            	<a href="#" target="_blank" title="壶韵乾坤"></a>
+            </div>
+            <div class="login_area">
+                    <ul class="login_box">
+                        <li class="top">登录中国和田玉网</li>
+                        <li class="inputs username">
+                            <input type="text" name="username" id="username" placeholder="用户名">
+                            <span class="Validform_checktip"></span>
+                        </li>
+                        <li class="inputs password">
+                            <input type="password" name="userpass" id="userpass" placeholder="密码">
+                            <span class="Validform_checktip"></span>
+                        </li>
+                        <li class="rember">
+                            <em id="cboxAgree" class="fCheck fChecked">记住我（下次自动登录）</em>
+                            <input name="SavePassword" type="hidden" value="true">
+                            <a href="/ForgetPwd">忘记密码？</a>
+                        </li>
+                        <li class="login">
+                            <input type="button" class="btn" value="登 录"/>
+                        </li>
+                        <li class="regnow">
+                            还不是中国和田玉网用户？
+                            <a href="reg.html">立即注册</a>
+                        </li>
+                        <li class="bottom">
+                            <span>合作网站账户登录：</span>
+                            <a href="#" class="icon-qq">QQ直接登录</a>
+                            <a href="#" class="icon-weibo">微博登录</a>
+                            <a href="#" class="icon-zfb">支付宝登录</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+	<div class="footer">
+        <div class="footer_inner">
+            <div class="promise"></div>
+            <div class="footer_content">
+                &copy;2004-2014 <a href="#" target="_blank">中国和田玉网 www.chinajade.cn</a> 电话：0514-87225756
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="cookieTools.js"></script>
+<script type="text/javascript">	
+	function ajaxs(username,userpass){
+		$.post("yz.php",{"username":username,"userpass":userpass},
+		    function(data){
+    	 	if(data==1){
+    	 		alert("登陆成功");
+                saveCookie("username",$("#username").val(),7);
+                location.href="index.html";
+    	 	}else{
+				alert("登陆失败");
+			}
+			// alert(data);
+    	 },"json"); 
+		};
+	$(".btn").click(function(){
+		ajaxs($("#username").val(),$("#userpass").val());
+	});		
+</script>
+</body>
+</html>
