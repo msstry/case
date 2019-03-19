@@ -1,0 +1,358 @@
+body,html,p,ul,li,p,i,span,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure,img,a{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"微软雅黑",Arial;
+    background: #f5f5f5;
+    font-size: 14px;
+    color: #666;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+img{
+    border:none;
+}
+.w{
+    width: 1200px;
+    margin:0 auto;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/*头部导航栏效果*/
+.top_nav{
+    height: 29px;
+    border-bottom: 1px solid #ccc;
+}
+.top_nav .w{
+    height: 29px;
+}
+.nav_ul{
+    float: right;
+    line-height: 29px;
+}
+.nav_li_div{
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    z-index: 2;
+}
+.nav_ul li .last{
+    position: absolute;
+    left:-167px ;
+    width: 246px;
+}
+.nav_ul li{
+    float: left;
+    padding: 0 20px;
+    padding-right: 10px;
+    position: relative;
+}
+.nav_ul li img{
+    margin-top: 15px;
+}
+.img_down{
+    line-height: 1;
+}
+.nav_ul .spec{
+    padding: 0 20px;
+}
+.nav_ul .spec .welcome{
+    display: none;
+}
+.nav_ul li i{
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    background: #eeeeee;
+    margin-left: 5px;
+    background: url("../images/section-tigger.png")no-repeat -26px -35px;
+}
+.nav_ul li:hover .nav_li_div{
+    display: block;
+}
+.nav_ul li:hover .nav_li_div a{
+    color: #666;
+}
+.nav_ul li:hover .nav_li_div a:hover{
+    color: deeppink;
+}
+.nav_ul li:hover{
+    background: #fff;
+}
+.nav_ul .spec:hover{
+    background: #f5f5f5;
+}
+.nav_ul li:hover i{
+    background-position: -13px -23px;
+}
+.top{
+    height: 110px;
+}
+.top .logo{
+    float: left;
+}
+.top .top_center{
+    float: left;
+    padding-top: 26px;
+    padding-left: 158px;
+}
+.top_center .select{
+    height: 34px;
+    width: 366px;
+    outline: none;
+    border: 2px solid #d90055;
+    /*box-sizing: border-box;*/
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.top_center .btnS{
+    width:98px ;
+    height: 38px;
+    /*background: #d90055;*/
+    background:url("../images/common-thumb.png")no-repeat -30px -4px;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-left: -7px;
+    vertical-align: middle;
+}
+.top_center .list{
+    line-height: 30px;
+}
+.top_center .list a{
+    color: #666;
+    margin-right: 10px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.top .top_right{
+    float: right;
+    width: 253px;
+    height: 32px;
+    margin-top: 30px;
+    position: relative;
+    /*border: 1px solid #000;*/
+}
+.top_right .img_car{
+    display: inline-block;
+    height: 100%;
+    width: 69px;
+    background: url("../images/common-thumb.png")no-repeat;
+    background-position: -236px -5px;
+}
+.top_right .car{
+    display: inline-block;
+    height: 28px;
+    width: 175px;
+    border:2px solid #ffda74 ;
+    line-height: 28px;
+    text-align: center;
+    position: relative;
+    top: -11px;
+    left: -4px;
+    font-size: 12px;
+}
+.top_right .car b{
+    color: #d90055;
+}
+.top_right .car a{
+    color: #d90055;
+}
+.nav{
+    height: 40px;
+    background: #000;
+   }
+.new_ul{
+    height: 40px;
+    position: relative;
+}
+.new_ul li{
+    float: left;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 2s;
+}
+.new_ul li a:hover{
+    color: #d70057!important;
+}
+.new_ul li i{
+    height: 0;
+    width: 0;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    display: none;
+}
+.new_ul .first{
+    background: #d90055;
+    margin-right: 122px;
+}
+.new_ul .setOutTime{
+    width: 114px;
+    height: 46px;
+    background: url("../images/time.png")no-repeat;
+    position: absolute;
+    top: -6px;
+    left: 100px;
+}
+.new_ul .global{
+    background: url("../images/7de29d4226bbf3855eb7eca34a680cc5.gif")no-repeat 0 0;
+    padding-left: 10px;
+}
+.sport_list{
+    width: 1086px;
+    height: 377px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 3px 3px 4px #c8c8c8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 10;
+}
+.list_down{
+    position: relative;
+
+}
+.list_down span{
+    transition: all 2s;
+}
+.list_down span:hover{
+    color: #d70057;
+    cursor: pointer;
+}
+.sport_list .sport_li_left{
+    float: left;
+    width: 335px;
+    height: 100%;
+    border-right: 1px dashed #aeaeae;
+    padding-right: 50px;
+}
+.sport_list .sport_li_center{
+    float: left;
+    height: 100%;
+    width: 394px;
+    border-right: 1px dashed #aeaeae;
+    padding-left: 12px;
+    padding-right: 50px;
+}
+.sport_list .sport_li_right{
+    float: right;
+    height: 100%;
+    width: 243px;
+}
+.sport_list h3{
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    color: #d90055;
+}
+.sport_list .last_h3{
+    padding-left: 15px;
+}
+.sport_list .title{
+    height: 40px;
+    line-height: 40px;
+}
+.sport_list span{
+    margin-right: 16px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.xiuXian_list{
+    width: 936px;
+}
+.xiuXian_list .sport_li_left{
+    width: 300px;
+}
+.xiuXian_list .sport_li_center{
+    width: 270px;
+}
+.boyAndGirl_list{
+    width: 958px;
+}
+.boyAndGirl_list .sport_li_left{
+    width: 277px;
+}
+.boyAndGirl_list .sport_li_center{
+    width: 324px;
+}
+.global_list{
+    width: 1157px;
+    height: 400px;
+}
+.global_list .sport_li_center img{
+    width: 523px;
+    height: 345px;
+    transition: all 3s;
+    margin-top: 10px;
+}
+.global_list .sport_li_center img:hover{
+    transform:scale(1.05) ;
+}
+.global_list .sport_li_center .boxs{
+    width: 523px;
+    height: 345px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px #ccc;
+}
+.global_list .sport_li_left{
+    width: 288px;
+}
+.global_list .sport_li_center{
+    width: 541px;
+    padding-right: 0;
+}
+/*回到顶部*/
+.scrollTop{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 90px;
+    background: url("../images/gototop_2.png")no-repeat 0 0;
+    display: none;
+}
+.btnOut{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

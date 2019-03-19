@@ -1,0 +1,296 @@
+body,html,p,ul,li,p,i,span,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure,img,a{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"微软雅黑",Arial;
+    font-size: 14px;
+    color: #666;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+img{
+    border:none;
+}
+.w{
+    width: 1200px;
+    margin:0 auto;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/*top*/
+.top{
+    height: 12%;
+}
+.logo{
+    float: left;
+}
+.top_nav{
+    float: right;
+    height: 95px;
+    text-align: center;
+}
+.top_nav li{
+    float: left;
+    line-height: 90px;
+    margin-left: 30px;
+}
+.top_nav li a{
+display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../images/ui_login.png)no-repeat;
+    background-position: -76px -60px;
+    margin: 0 8px;
+    margin-top: 5px;
+ }
+/*login main*/
+/*账号登录*/
+.main{
+    height: 72%;
+    background:url("../images/c302701c79fbd2e6a84be4143a316922.jpg")no-repeat center;
+    background-size: cover;
+}
+.main .w{
+    overflow: hidden;
+}
+.main .login{
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    float: right;
+    margin-top: 20px;
+    position: relative;
+}
+.login header{
+    line-height: 80px;
+    width:320px;
+    margin: 0 auto;
+    padding: 0 70px;
+}
+.login header a{
+    display: inline-block;
+    font-family: 'Microsoft Yahei';
+    font-size: 22px;
+    font-weight: bold;
+}
+.login header .span1 a{
+    margin-right: 100px;
+    color:#333;
+}
+.login header .span2 a{
+    color: #333;
+}
+.login header .span a{
+    font-size: 16px;
+    margin-right: 0;
+}
+.login header .spanc a{
+    color: #d70057;
+}
+.login .header{
+    padding: 0;
+}
+.login .header .span2{
+    float: right;
+}
+.login .header .span2 a{
+    color: #d70057;
+}
+input{
+    outline: none;
+    border:1px solid #d3d5d8;
+    height: 45px;
+    width: 320px;
+    margin: 10px 50px;
+    padding-left: 10px;
+}
+.check{
+    width: 173px;
+}
+.change{
+    width: 100px;
+    height: 36px;
+    position: relative;
+    top: 12px;
+    right: 18px;
+}
+#username{
+    width: 310px;
+    padding-left: 10px;
+}
+#userpass{
+    width: 310px;
+    padding-left: 10px;
+}
+.miss{
+    display: block;
+    position: relative;
+    right: -305px;
+    top: 7px;
+    color:#aaa;
+    font-size: 14px;
+    width:70px;
+}
+.miss1{
+    display: block;
+    position: relative;
+    color:#aaa;
+    font-size: 12px;
+    margin-left: 50px;
+}
+.miss1 span{
+    color: #d70057;
+}
+#btnLogin{
+    background: #d70057;
+    color: #Fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+#btnReg{
+    background: #d70057;
+    color: #Fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+#btnLogin:hover{
+    opacity: 0.9;
+}
+.spanError{
+    margin-left: 50px;
+    display: none;
+    color: #d70057;
+}
+.spanError1{
+    margin-left: 50px;
+    display: none;
+    color: #d70057;
+}
+.spanError2{
+    margin-left: 50px;
+    display: none;
+    color: #d70057;
+}
+.spanError3{
+    margin-left: 50px;
+    color: #d70057;
+    display: none;
+
+}
+.ok{
+    margin-left: 50px;
+    color: #00584b;
+    display: none;
+}
+/*扫码登录*/
+.Ma{
+    width: 340px;
+    height: 277px;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+.Ma .img{
+    transition: all 2s;
+}
+.Ma img:nth-child(1){
+    width: 180px;
+    height: 180px;
+}
+.Ma img:nth-child(2){
+    width: 155px;
+    height: 180px;
+    display: none;
+    opacity: 0;
+    transition: all 2s;
+}
+.img:hover .img2{
+
+    display: inline-block;
+    opacity: 1;
+}
+.Ma .app{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../images/ui_login.png")no-repeat -52px -58px;
+}
+.Ma p{
+   margin-top: 30px;
+}
+.download{
+    position: relative;
+}
+.download img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 35px;
+    left: 130px;
+    display:none;
+}
+.download:hover img{
+    display: block;
+}
+/*footer*/
+.bottom{
+    width: 360px;
+    margin:  0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.bottom a{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    background: url("../images/ui_login.png")no-repeat;
+}
+.bottom a:nth-child(1){
+    background-position: -23px -58px;
+}
+.bottom a:nth-child(2){
+    background-position: -5px -42px;
+}
+.bottom a:nth-child(3){
+    background-position: -5px -76px;
+}
+.bottom a:nth-child(4){
+    background-position: -53px -30px;
+}
+.bottom a:nth-child(5){
+    background-position: -23px -30px;
+}
+.bottom a:nth-child(6){
+    background-position: -76px -31px;
+    margin-right: 0;
+}
+.bottom span{
+    margin-top: -15px;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+.reg{
+    margin-left: 81px;
+}
+.foot{
+    height: 16%;
+    text-align: center;
+}
+.foot .w span{
+    display: inline-block;
+    margin-top: 70px;
+}
+/*reg*/

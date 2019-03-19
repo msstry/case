@@ -1,0 +1,148 @@
+/* css 重置 */
+*{margin:0; padding:0; list-style:none; }
+body{
+     background:#fff;
+     font:normal 12px/22px 宋体;
+     width:100%;
+}
+img{
+     border:0;
+}
+a{
+     text-decoration:none;
+     color:#333;
+}
+a:hover{
+     color:#1974A1;
+}
+
+.fullSlide{
+     width:100%;
+     position:relative;
+     height:350px;
+     background:#000;
+}
+.fullSlide .bd{
+     margin:0 auto;
+     position:relative;
+     z-index:0;
+     overflow:hidden;
+}
+.fullSlide .bd ul{
+     width:100% !important;
+}
+.fullSlide .bd li{
+     width:100% !important;
+     height:350px;
+     overflow:hidden;
+     text-align:center;
+}
+.fullSlide .bd li a{
+     display:block;
+     height:410px;
+}
+
+.fullSlide .hd{
+     width:100%;
+     position:absolute;
+     z-index:1;
+     bottom:10px;
+     left:0;
+     height:30px;
+}
+.fullSlide .hd ul{
+     text-align:center;
+}
+.fullSlide .hd ul li{
+     cursor:pointer;
+     display:inline-block;
+     /*zoom:1;*/
+     width:20px;
+     height:20px;
+     border-radius:50%;
+     margin:6px;
+     overflow:hidden;
+     background: #444;
+     /*border: 2px solid #fff;*/
+     color:rgba(255,255,255,0.6);
+     line-height: 55px;
+}
+.fullSlide .hd ul .on{
+     background: #d00015;
+     color:#fff;
+
+}
+.fullSlide .prev,
+.fullSlide .next{
+     display:block;
+     position:absolute;
+     z-index:1;
+     top:50%;
+     margin-top:-30px;
+     left:15%;
+     width:22px;
+     height:36px;
+     background:url(../images/slideconcroll.png) 0px 0px  no-repeat;
+     cursor:pointer;
+}
+.fullSlide .next{
+     left:auto;
+     right:15%;
+     background-position:-22px 0px;
+}
+.fullSlide1{
+     width:100%;
+     position:relative;
+     height:450px;
+     background:#000;
+}
+.fullSlide1 .bd1{
+     margin:0 auto;
+     position:relative;
+     z-index:0;
+     overflow:hidden;
+}
+.fullSlide1 .bd1 ul{
+     width:100% !important;
+}
+.fullSlide1 .bd1 li{
+     width:100% !important;
+     height:450px;
+     overflow:hidden;
+     text-align:center;
+}
+.fullSlide1 .bd1 li a{
+     display:block;
+     height:510px;
+}
+
+.fullSlide1 .hd1{
+     width:150px;
+     position:absolute;
+     z-index:1;
+     bottom:50px;
+     right: 350px;
+     height:30px;
+     /*line-height:30px;*/
+}
+.fullSlide1 .hd1 ul{
+     text-align:center;
+}
+.fullSlide1 .hd1 ul li{
+     cursor:pointer;
+     display:inline-block;
+     /*zoom:1;*/
+     width:20px;
+     height:20px;
+     border-radius:50%;
+     margin:6px;
+     overflow:hidden;
+     background: #444;
+     border: 2px solid #fff;
+     /*line-height:999px;*/
+     color:rgba(255,255,255,0.6);
+}
+.fullSlide1 .hd1 ul .on{
+     background: #d00015;
+     color:#fff;
+}

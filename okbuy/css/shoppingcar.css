@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f5f5f5;
+}
+html,body{
+    height: 100%;
+}
+.carTitleBox{
+    height: 60px;
+    line-height: 60px;
+    margin-top: 12px;
+    border-bottom: 2px solid #d70057;
+}
+.cartitle{
+    font-size: 30px;
+    line-height: 48px;
+    color: #333;
+    display: inline-block;
+    font-weight: normal;
+    font-family: 'Microsoft Yahei';
+}
+.cartlogin{
+    text-align: center;
+    margin-top: 45px;
+    border: 1px solid #e8e8e8;
+    padding-top: 26px;
+}
+.cartlogin a {
+    display: block;
+    height: 30px;
+    width: 120px;
+    background: #d70057;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 26px;
+}
+.nullcart {
+    margin: 40px 0 0 317px;
+    float: left;
+}
+.nullcartright {
+    float: left;
+    height: 172px;
+    margin: 40px 0 0 010px;
+    padding-top: 30px;
+}
+.nullcartright p {
+    font-family: 'Microsoft Yahei';
+    font-size: 30px;
+    line-height: 48px;
+    color: #999;
+}
+.nullcartright a {
+    float: left;
+    width: 168px;
+    height: 49px;
+    border: 1px solid #ccc;
+    color: #999;
+    text-align: center;
+    line-height: 49px;
+    display: block;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all .3s;
+}
+.nullcartright a:hover{
+    border: 1px solid #999;
+    color: #666;
+}
+.cartlist .thead{
+    height: 77px;
+}
+.cbiaoti{
+    display: flex;
+    width: 100%;
+    height: 77px;
+    background: #fff;
+    line-height: 77px;
+    text-align: center;
+    border-bottom: 1px solid #e8e8e8;
+    color: #333;
+    font-size: 16px;
+}
+.cbiaoti .l110{
+    width: 110px;
+}
+.cbiaoti b{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 6px;
+    left: -15px;
+}
+.check-all{
+    background: url(http://0.js.al.okbuycdn.com/resources/images/v6/cart/checkbox.png) -20px 0 no-repeat;
+}
+.cbiaoti .l470{
+    width: 470px;
+}
+.cbiaoti .l240{
+    width: 240px;
+}
+.cbiaoti .sy{
+    flex: 1;
+}
+.goods{
+    height: 151px;
+    display: flex;
+    background: #fff;
+    line-height: 151px;
+}
+.goods ul{
+    width: 100%;
+    display: flex;
+}
+.goods .one{
+    width: 110px;
+}
+.goods .l110{
+    width: 110px;
+}
+.goods .one b{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 6px;
+    left: 13px;
+}
+.goods .l460{
+    width: 470px;
+    display: flex;
+    padding-top: 30px;
+    height: 121px;
+}
+.goods .l460 img{
+    width: 92px;
+    height: 92px;
+}
+.jieshi{
+    width: 353px;
+    height: 75px;
+    padding-top: 17px;
+}
+.goods .l460 .jieshi h5{
+    width: 343px;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 100;
+    text-overflow: ellipsis;
+    padding-left: 10px;
+    color: #333;
+}
+.prices{
+    color: #d70057;
+}
+.prices{
+    text-align: center;
+}
+.shop-con{
+    width: 240px;
+    text-align: center;
+}
+.shop-con button{
+    outline: none;
+    height: 40px;
+    width: 46px;
+    border: 0;
+    background: #fff;
+}
+.shop-con .gmcont{
+    width: 84px;
+}
+.sumprice{
+    text-align: center;
+    font-size: 16px;
+    color: #d70057;
+}
+.sAadDel{
+    flex: 1;
+    text-align: center;
+}
+.sAadDel b{
+    width: 24px;
+    height: 24px;
+    background: #DED5A1;
+    display: inline-block;
+    position: relative;
+}
+.sAadDel b i{
+    position: absolute;
+    left: 0px;
+    top: -37px;
+    font-size: 12px;
+    display: none;
+}
+.sAadDel .shoucang {
+    background: url(http://0.js.al.okbuycdn.com/resources/images/v6/cart/carticon.png) 0 0 no-repeat;
+}
+.sAadDel .shoucang:hover i{
+    display: inline-block;
+}
+.sAadDel .shanchu{
+background: url(http://0.js.al.okbuycdn.com/resources/images/v6/cart/carticon.png) -52px 0 no-repeat;
+}
+.sAadDel .shanchu:hover i{
+    display: inline-block;
+}
+.jiesuan{
+    height:60px;
+    font-size: 14px;
+    color: #333;
+}
+.jiesuan ul{
+    display: flex;
+    line-height: 66px;
+}
+.jiesuan .all{
+    width: 110px;
+}
+.all .checkb{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 6px;
+    left: 13px;
+    margin-right: 25px;
+}
+.jiesuan .delall{
+    flex: 1;
+    padding-left: 15px;
+}
+.jiesuan .conn,.shopingmoney,.youhui,.yunfei,.payBtn{
+    text-align: center;
+}
+.jiesuan .conn{
+    width: 100px;
+}
+.shopingmoney{
+    width: 140px;
+}
+.youhui{
+   width: 130px;
+}
+.yunfei{
+    width: 220px;
+}
+.payBtn{
+    width: 160px;
+}
+.payBtn a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #d70057;
+    color: #fff;
+    font-size: 26px;
+    line-height: 66px;
+}
+.jine,.youhui_jine,.pay_money,.sum-count{
+    color: #d70057;
+}
+.pay_money{
+    font-size: 24px;
+    font-weight: bold;
+}
