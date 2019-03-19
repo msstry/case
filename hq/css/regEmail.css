@@ -1,0 +1,276 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,p,input,select,textarea,td{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+i{
+	font-style: normal;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+span{
+	display: block;
+}
+/* 头部 */
+.header{
+	/* height: 100px; */
+	border-bottom: 2px solid #E10808;
+	padding: 15px 0;
+}
+.header_left{
+	width: 980px;
+	height: 50px;
+	margin: 0 auto;
+}
+.header_logo{
+	width: 450px;
+	height: 50px;
+}
+.logo{
+	width: 200px;
+	height: 50px;
+	float: left;
+	text-indent: -999px;
+	overflow: hidden;
+}
+.logo a{
+	width: 200px;
+	height: 50px;
+	display: block;
+	background: url(../img/sprites_index.png) no-repeat 0 0;
+}
+.header_freight{
+	width: 125px;
+	height: 50px;
+	padding-left: 20px;
+	border-left: 3px solid #f0f0f0;
+	float: left;
+	background: url(../img/sprites_index.png) no-repeat 20px -393px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+/*内容*/
+.content{
+	width: 980px;
+	margin: 0 auto;
+	padding: 10px 0 44px;
+	overflow: hidden;
+}
+.reg_con{
+	position: relative;
+}
+.reg_title{
+	height: 42px;
+	border-bottom: 1px solid #e2e2e2;
+	background: url(../img/reg_title.jpg) no-repeat;
+	margin-bottom: 20px;
+	text-align: left;
+	position: relative;
+}
+.reg_title p{
+	font-size: 14px;
+	border: 1px solid #e2e2e2;
+	border-bottom: none;
+	width: 120px;
+	height: 30px;
+	background: #fff;
+	text-align: center;
+	color: #676767;
+	line-height: 30px;
+	position: absolute;
+	top: 12px;
+	left: 200px;
+}
+.reg_left{
+	width: 870px;
+	margin-left: 40px;
+}
+.reg_left ul{
+    width: 835px;
+    height: 35px;
+    padding: 20px 15px 0 0;
+}
+.reg_left ul li{
+	float: left;
+	font-size: 14px;
+	color: #676767;
+}
+.reg_left_a{
+	width: 100px;
+	height: 36px;
+	margin-left: 5px;
+	text-align: right;
+	line-height: 36px;
+}
+.reg_left_b input{
+	width: 310px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #c9c8c8;
+    text-align: left;
+    color: #333;
+    padding: 5px;
+    background: url(../img/login_bg.png) no-repeat;
+	outline: none;
+	float: left;
+}
+
+.reg_left_b .reg_left_input{
+	width: 127px;
+	float: left;
+}
+.reg_left_span{
+	font-size: 16px;
+	width: 100px;
+	/*background: #000;*/
+	border: 1px solid #000;
+	height: 30px;
+	float: left;
+	margin: 5px 0 0 5px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: line-through;
+	margin-right: 10px;
+}
+.reg_left_p{
+	font-size: 12px;
+	float: left;
+	line-height: 40px;
+}
+#yzm{
+	font-size: 12px;
+	color: #0066cd;
+	border: none;
+	background: none;
+	outline:none;
+	margin-left: -10px;
+}
+#yzm:hover{
+	text-decoration: underline;
+}
+.sjyz{
+	float: left;
+	display: inline-block;
+	font-size: 12px;
+	height: 30px;
+	width: 100px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 2px;
+	background: url(../img/login_group.jpg) no-repeat left -464px;
+	cursor: default;
+	margin-top: 5px;
+}
+.aa{
+	font-size: 14px;
+	color: #676767;
+	margin: 24px 0 0 105px;
+}
+.aa a{
+	font-size: 14px;
+	color: #0066cd;
+}
+.aa a:hover{
+	text-decoration: underline;
+}
+.aa p{
+	float: left;
+}
+.aa .checked{
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 8px;
+	float: left;
+}
+.aa .xy{
+	float: left;
+}
+.bb{
+	height: 75px;
+	line-height: 75px;
+	clear: both;	
+}
+.bb input{
+	border: none;
+	background-color: #fff;
+	width: 142px;
+	height: 39px;
+	color: #fff;
+	font-size: 20px;
+	margin: 20px 0 16px 105px;
+	background: url(../img/login_group.jpg) no-repeat left -82px;
+	cursor: pointer;
+}
+.bb input:hover{
+	background: url(../img/login_group.jpg) no-repeat left -125px;
+}
+.reg_right{
+	width: 170px;
+	height: 150px;
+	padding: 20px 25px;
+	border: 1px solid #e2e2e2;
+	font-size: 12px;
+	position: absolute;
+	top: 90px;
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部*/
+.footer{
+	height: 80px;
+	border-top: 1px solid #eee;
+	text-align: center;
+}
+.footer_a{
+	width: 980px;
+	height: 80px;
+	margin: 0 auto;
+}
+.footer_a p{
+	height: 22px;
+    padding: 24px 0 0;
+    line-height: 22px;
+    color: #808080;
+    text-align: center;
+    font-size: 12px;
+}
+.footer_a p a{
+    color: #808080;
+    font-size: 12px;
+}
+.footer_a p a:hover{
+	text-decoration: underline;
+}
+.footer_a p a img{
+	vertical-align: middle;
+}

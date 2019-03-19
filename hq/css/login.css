@@ -1,0 +1,243 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,p,input,select,textarea,td{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+i{
+	font-style: normal;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+span{
+	display: block;
+}
+/* 头部 */
+.header{
+	/* height: 100px; */
+	border-bottom: 2px solid #E10808;
+	padding: 15px 0;
+}
+.header_left{
+	width: 980px;
+	height: 50px;
+	margin: 0 auto;
+}
+.header_logo{
+	width: 450px;
+	height: 50px;
+}
+.logo{
+	width: 200px;
+	height: 50px;
+	float: left;
+	text-indent: -999px;
+	overflow: hidden;
+}
+.logo a{
+	width: 200px;
+	height: 50px;
+	display: block;
+	background: url(../img/sprites_index.png) no-repeat 0 0;
+}
+.header_freight{
+	width: 125px;
+	height: 50px;
+	padding-left: 20px;
+	border-left: 3px solid #f0f0f0;
+	float: left;
+	background: url(../img/sprites_index.png) no-repeat 20px -393px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+/*内容*/
+.content{
+	width: 980px;
+	margin: 0 auto 30px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+.con_l{
+	width: 620px;
+	float:left;
+}
+.con_r{
+	width: 350px;
+	float: right;
+	margin-top: 40px;
+	border: 1px solid #d7d7d7;
+	background-color: #f5f5f5;
+}
+.con_r h2{
+	font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 24px 15px;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    display: block;
+    overflow: hidden;
+}
+.m{
+	padding: 0 24px 20px;
+}
+.us{
+	margin-bottom: 24px;
+}
+.us_a{
+    width: 268px;
+    height: 28px;
+    padding: 5px 10px;
+    color: #666;
+    font-size: 12px;
+    border: 1px solid #ababab;
+    background: url(../img/login.png) 0 -237px no-repeat;
+    vertical-align: middle;
+    outline: none;
+}
+.us_b{
+    width: 268px;
+    height: 28px;
+    padding: 5px 10px;
+    color: #666;
+    font-size: 12px;
+    border: 1px solid #ababab;
+    background: url(../img/login.png) 0 -237px no-repeat;
+    vertical-align: middle;
+    outline: none;
+}
+.pw{
+	margin-bottom: 14px;
+}
+.zd_login{
+	color: #999;
+	margin-bottom: 14px;
+	font-size: 12px;
+}
+.zd_login input{
+	vertical-align: middle;
+}
+.dl_login{
+	color: #00a9d4;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 0 8px;	
+}
+.dl_a{
+	float: left;
+    width: 135px;
+    height: 39px;
+    background-image: url(../img/login.png);
+    background-repeat: no-repeat;
+    margin-right: 14px;
+    background-position: 0 0;
+}
+.dl_a_a{
+    width: 135px;
+    height: 39px;
+    line-height: 39px;
+    background: none;
+    border: none 0;
+    font-size: 21px;
+    text-align: center;
+    color: #fff;
+}
+.dl_a:hover{
+	background-image: url(../img/login.png);
+	background-position: 0 -98px;
+}
+.dl_b{
+	font-size: 12px;
+	color: #666666;
+}
+.dl_b:hover{
+	text-decoration: underline;
+}
+.zc_reg{
+	margin: 0 0 14px;
+    height: 18px;
+    line-height: 18px;
+    color: #3576f8;
+    font-size: 14px;
+    text-align: left;
+}
+.zc_reg p{
+	color: #333;
+}
+.zc_reg p a{
+	color: #3576f8;
+}
+.zc_reg p a:hover{
+	text-decoration: underline;
+}
+.qt_login{
+    padding: 0 24px 18px;
+    height: 20px;
+    line-height: 20px;
+}
+.qt_login a{
+	color: #999;
+    padding: 0 0 0 22px;
+    height: 20px;
+    font-size: 12px;
+    display: inline-block;
+    background: url(../img/login.png) no-repeat;
+}
+.qt_login a:hover{
+	color: #000;
+}
+.qt_login a:nth-child(1){
+	background-position: 0 -147px;
+}
+.qt_login a:nth-child(2){
+	background-position: 0 -177px;
+}
+.qt_login a:nth-child(3){
+	background-position: 0 -208px;
+}
+.qt_login a:nth-child(4){
+	background-position: 0 -445px;
+}
+.footer{
+	height: 80px;
+	border-top: 1px solid #eee;
+	text-align: center;
+}
+.footer_a{
+	width: 980px;
+	height: 80px;
+	margin: 0 auto;
+}
+.footer_a p{
+	height: 22px;
+    padding: 24px 0 0;
+    line-height: 22px;
+    color: #808080;
+    text-align: center;
+    font-size: 12px;
+}
+.footer_a p a{
+    color: #808080;
+    font-size: 12px;
+}
+.footer_a p a:hover{
+	text-decoration: underline;
+}
+.footer_a p a img{
+	vertical-align: middle;
+}
+/*提示*/
+.ts{
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	color: #E10808;
+	padding-left: 30px;
+}
