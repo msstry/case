@@ -1,0 +1,664 @@
+{
+  "indexInfo": {
+    "indexHeader": {
+      "navInfo": [
+        "精选",
+        "爱看",
+        "电视剧",
+        "电影",
+        "综艺",
+        "少儿",
+        "记录片",
+        "搞笑",
+        "新闻"
+      ],
+      "souSuo":{
+        "search": "月光宝盒",
+        "searchTj": "推荐"
+      }
+    },
+    "indexSection": {
+      "bannerInfo": [
+        {
+          "bannerPic": "./static/img/banner01.png",
+          "bannerWord": "【怒晴湘西 · 大结局】帅！陈玉楼空降单挑尸王"
+        },
+        {
+          "bannerPic": "./static/img/banner01.png",
+          "bannerWord": "【怒晴湘西 · 大结局】帅！陈玉楼空降单挑尸王"
+        }
+      ],
+      "listInfo": {
+        "title": "猜你在追",
+        "list": [
+          {
+            "listPic": "./static/img/m02.png",
+            "listTitle": "剑灵尊",
+            "listDes": "归来！ 楚行云再升级"
+          },
+          {
+            "listPic": "./static/img/m02.png",
+            "listTitle": "剑灵尊",
+            "listDes": "归来！ 楚行云再升级"
+          },{
+            "listPic": "./static/img/m02.png",
+            "listTitle": "孤独皇后",
+            "listDes": "杨忠仙逝，伽罗泪洒国公府"
+          },
+          {
+            "listPic": "./static/img/m02.png",
+            "listTitle": "孤独皇后",
+            "listDes": "杨忠仙逝，伽罗泪洒国公府"
+          }
+        ]
+      },
+      "aiKan":[
+        {
+          "aKPic":"./static/img/i01.png",
+          "aKUserNic":"帆布的青春",
+          "aKUserPic":"./static/img/i03.png",
+          "aKUserCom":"9",
+          "aKZPic":"./static/img/i02.png",
+          "aKZName":"看正片"
+        },
+        {
+          "aKPic":"./static/img/i01.png",
+          "aKUserNic":"帆布的青春",
+          "aKUserPic":"./static/img/i03.png",
+          "aKUserCom":"9",
+          "aKZPic":"./static/img/i02.png",
+          "aKZName":"看正片"
+        },
+        {
+          "aKPic":"./static/img/i01.png",
+          "aKUserNic":"帆布的青春",
+          "aKUserPic":"./static/img/i03.png",
+          "aKUserCom":"9",
+          "aKZPic":"./static/img/i02.png",
+          "aKZName":"看正片"
+        },
+        {
+          "aKPic":"./static/img/i01.png",
+          "aKUserNic":"帆布的青春",
+          "aKUserPic":"./static/img/i03.png",
+          "aKUserCom":"9",
+          "aKZPic":"./static/img/i02.png",
+          "aKZName":"看正片"
+        }
+      ],
+      "dsj":{
+        "banner":[
+          {
+            "bannerPic":"./static/img/d01.png",
+            "bannerWord":"8级武魂觉醒，三天封号斗罗1"
+          },
+          {
+            "bannerPic":"./static/img/d01.png",
+            "bannerWord":"8级武魂觉醒，三天封号斗罗2"
+          },
+          {
+            "bannerPic":"./static/img/d01.png",
+            "bannerWord":"8级武魂觉醒，三天封号斗罗3"
+          }
+        ],
+        "list": [
+          {
+            "listPic": "./static/img/m02.png",
+            "listTitle": "剑灵尊",
+            "listDes": "归来！ 楚行云再升级"
+          },
+          {
+            "listPic": "./static/img/m02.png",
+            "listTitle": "剑灵尊",
+            "listDes": "归来！ 楚行云再升级"
+          },{
+            "listPic": "./static/img/m02.png",
+            "listTitle": "孤独皇后",
+            "listDes": "杨忠仙逝，伽罗泪洒国公府"
+          },
+          {
+            "listPic": "./static/img/m02.png",
+            "listTitle": "孤独皇后",
+            "listDes": "杨忠仙逝，伽罗泪洒国公府"
+          }
+        ],
+        "title":"热剧精选",
+        "dsjInfo":[
+          {
+            "listInfoPic":"./static/img/d02.png",
+            "listInfoTitle":"都挺好[会员抢先看]",
+            "listInfoDes":"\"作精\" 公公逼疯儿媳妇"
+          },
+          {
+            "listInfoPic":"./static/img/d03.png",
+            "listInfoTitle":"倚天屠龙记[会员抢先看]",
+            "listInfoDes":"张无忌中美人计暴露身份"
+          },
+          {
+            "listInfoPic":"./static/img/vip03.png",
+            "listInfoTitle":"怒晴湘西 · 看全集",
+            "listInfoDes":"帅！ 陈玉楼空降单挑尸王"
+          },
+          {
+            "listInfoPic":"./static/img/vip03.png",
+            "listInfoTitle":"怒晴湘西 · 看全集",
+            "listInfoDes":"帅！ 陈玉楼空降单挑尸王"
+          }
+        ]
+      },
+      "dy":{
+        "title":"三月观影指南：该为谁买票",
+        "pic":"./static/img/dy01.png",
+        "dyInfo":[
+          {
+            "listInfoPic":"./static/img/dy02.png",
+            "listInfoTitle":"白蛇：缘起 · 美哭",
+            "listInfoDes":"虐心！白蛇许仙情定前生"
+          },
+          {
+            "listInfoPic":"./static/img/dy03.png",
+            "listInfoTitle":"驯龙高手 · 超萌",
+            "listInfoDes":"小嗝嗝没牙仔并肩作战"
+          },
+          {
+            "listInfoPic":"./static/img/dy04.png",
+            "listInfoTitle":"摘金奇缘 · 太豪了",
+            "listInfoDes":"豪门家族掀婆媳风云"
+          },
+          {
+            "listInfoPic":"./static/img/dy05.png",
+            "listInfoTitle":"云南虫谷 · 视效惊艳！",
+            "listInfoDes":"摸金校尉再探古墓"
+          },
+          {
+            "listInfoPic":"./static/img/dy06.png",
+            "listInfoTitle":"男儿本色 · 蓝光",
+            "listInfoDes":"吴京飞身跃起脚踢余文乐"
+          },
+          {
+            "listInfoPic":"./static/img/dy07.png",
+            "listInfoTitle":"“大” 人物 · 超解气",
+            "listInfoDes":"王千源暴揍嚣张富二代"
+          }
+        ]
+      },
+      "zy":{
+        "banner":[
+          {
+            "bannerPic":"./static/img/zy01.png",
+            "bannerWord":"【最强大脑】艺术生PK女博士惊天逆袭"
+          },
+          {
+            "bannerPic":"./static/img/zy01.png",
+            "bannerWord":"【最强大脑】艺术生PK女博士惊天逆袭"
+          },
+          {
+            "bannerPic":"./static/img/zy01.png",
+            "bannerWord":"【最强大脑】艺术生PK女博士惊天逆袭"
+          }
+        ],
+        "list": [
+          {
+            "listPic": "./static/img/zy02.png",
+            "listTitle": "遇见你真好",
+            "listDes": "神秘女5加入宣仪激动"
+          },
+          {
+            "listPic": "./static/img/zy03.png",
+            "listTitle": "最强大脑之燃烧吧大脑",
+            "listDes": "中戏美女赢清华女博士"
+          },{
+            "listPic": "./static/img/zy02.png",
+            "listTitle": "遇见你真好",
+            "listDes": "神秘女5加入宣仪激动"
+          },
+          {
+            "listPic": "./static/img/zy03.png",
+            "listTitle": "最强大脑之燃烧吧大脑",
+            "listDes": "中戏美女赢清华女博士"
+          }
+        ],
+        "title":"鹅给你好看🌞",
+        "zyInfo":[
+          {
+            "listInfoPic":"./static/img/zy04.png",
+            "listInfoTitle":"横冲直撞20岁 · 收官",
+            "listInfoDes":"火箭少女爆笑清唱比拼"
+          },
+          {
+            "listInfoPic":"./static/img/zy05.png",
+            "listInfoTitle":"终极高手 · 侯明昊咆哮",
+            "listInfoDes":"王昭君一套连招秒职业大神"
+          },
+          {
+            "listInfoPic":"./static/img/zy04.png",
+            "listInfoTitle":"横冲直撞20岁 · 收官",
+            "listInfoDes":"火箭少女爆笑清唱比拼"
+          },
+          {
+            "listInfoPic":"./static/img/zy05.png",
+            "listInfoTitle":"终极高手 · 侯明昊咆哮",
+            "listInfoDes":"王昭君一套连招秒职业大神"
+          }
+        ]
+      },
+      "sr":{
+        "banner":[
+          {
+            "bannerPic":"./static/img/sr01.png",
+            "bannerWord":"【答题赢好礼】开学季！看熊出没之探险日记2赢好礼"
+          },
+          {
+            "bannerPic":"./static/img/sr01.png",
+            "bannerWord":"【答题赢好礼】开学季！看熊出没之探险日记2赢好礼"
+          },
+          {
+            "bannerPic":"./static/img/sr01.png",
+            "bannerWord":"【答题赢好礼】开学季！看熊出没之探险日记2赢好礼"
+          }
+        ],
+        "title":"看精彩动画充满活力(*^▽^*)",
+        "srInfo":[
+          {
+            "listInfoPic":"./static/img/sr02.png",
+            "listInfoTitle":"动物合唱团[评论有奖]",
+            "listInfoDes":"用最快的时速追上快乐"
+          },
+          {
+            "listInfoPic":"./static/img/sr03.png",
+            "listInfoTitle":"超级小熊布迷 第二季",
+            "listInfoDes":"童话故事里的大冒险"
+          },
+          {
+            "listInfoPic":"./static/img/sr04.png",
+            "listInfoTitle":"熊出没之探险日记2",
+            "listInfoDes":"神秘的游客能听懂动物语言"
+          },
+          {
+            "listInfoPic": "./static/img/sr05.png",
+            "listInfoTitle": "豆乐儿歌[独播]",
+            "listInfoDes": "纸杯会发光！我有想象力"
+          },
+          {
+            "listInfoPic":"./static/img/sr06.png",
+            "listInfoTitle":"嗨！道奇 第三季",
+            "listInfoDes":"帮小鸭子找到妈妈"
+          },
+          {
+            "listInfoPic":"./static/img/sr07.png",
+            "listInfoTitle":"超迷你战士 第二季",
+            "listInfoDes":"酷甲勇出击打败完美大师"
+          }
+        ]
+      },
+      "jlp":{
+        "banner":[
+          {
+            "bannerPic":"./static/img/jlp01.png",
+            "bannerWord":"【野生萌宠 · 更新】会员先看！潜水员头探进鲨鱼口"
+          },
+          {
+            "bannerPic":"./static/img/jlp01.png",
+            "bannerWord":"【野生萌宠 · 更新】会员先看！潜水员头探进鲨鱼口"
+          },
+          {
+            "bannerPic":"./static/img/jlp01.png",
+            "bannerWord":"【野生萌宠 · 更新】会员先看！潜水员头探进鲨鱼口"
+          }
+        ],
+        "title":"♨热播大放送♨",
+        "jlpInfo":[
+          {
+            "listInfoPic":"./static/img/jlp02.png",
+            "listInfoTitle":"人世间2 · 阿尔茨海默症",
+            "listInfoDes":"老夫妇\"生死诀别\"感人至深"
+          },
+          {
+            "listInfoPic":"./static/img/jlp03.png",
+            "listInfoTitle":"记住乡愁 · 更新",
+            "listInfoDes":"馋！粉蒸豆皮散发浓浓肉香"
+          },
+          {
+            "listInfoPic":"./static/img/jlp04.png",
+            "listInfoTitle":"航拍中国2 · 23点首播",
+            "listInfoDes":"绝美震撼！每帧都是壁纸"
+          },
+          {
+            "listInfoPic": "./static/img/jlp05.png",
+            "listInfoTitle": "创变中国 · 热播",
+            "listInfoDes": "黎贝卡单身豪宅太梦幻"
+          },
+          {
+            "listInfoPic":"./static/img/jlp06.png",
+            "listInfoTitle":"【野生萌宠 · 更新】会员先看！潜水员头探进鲨鱼口",
+            "listInfoDes":"嗨起来！猴子学人类开泳池趴"
+          },
+          {
+            "listInfoPic":"./static/img/jlp07.png",
+            "listInfoTitle":"中国照相馆 · 珍妃照片历史",
+            "listInfoDes":"假的！极有可能是青楼女子"
+          }
+        ]
+      },
+      "gx":[
+        {
+          "Pic":"./static/img/gx01.png",
+          "UserNic":"帆布的青春",
+          "UserPic":"./static/img/gx02.png",
+          "UserCom":"2",
+          "ZName":["趣闻播报"]
+        },
+        {
+          "Pic":"./static/img/gx01.png",
+          "UserNic":"帆布的青春",
+          "UserPic":"./static/img/gx02.png",
+          "UserCom":"",
+          "ZName":["搞笑剧","翻转剧"]
+        },
+        {
+          "Pic":"./static/img/gx01.png",
+          "UserNic":"帆布的青春",
+          "UserPic":"./static/img/gx02.png",
+          "UserCom":"13",
+          "ZName":["趣闻播报"]
+        }
+      ],
+      "xw":[
+        {
+          "Pic":"./static/img/xw01.png",
+          "UserNic":"凌度看世界",
+          "UserPic":"./static/img/xwu01.png",
+          "UserCom":"2",
+          "ZName":[]
+        },
+        {
+          "Pic":"./static/img/xw02.png",
+          "UserNic":"小企",
+          "UserPic":"./static/img/xwu02.png",
+          "UserCom":"6",
+          "ZName":["冷知识"]
+        },
+        {
+          "Pic":"./static/img/xw03.png",
+          "UserNic":"木子看天下",
+          "UserPic":"./static/img/xwu03.png",
+          "UserCom":"2",
+          "ZName":["女性安全"]
+        }
+      ],
+      "advPic": "./static/img/m03.png"
+    }
+  },
+  "yooInfo": {
+    "yooHeader": [
+      "推荐",
+      "小视频",
+      "关注"
+    ],
+    "yooSectionList": [
+      {
+        "listPic": "./static/img/yoo01.png",
+        "userNic": "小健侃搞笑",
+        "userPic": "./static/img/yoo05.png",
+        "userCom": "8"
+      },
+      {
+        "listPic": "./static/img/yoo01.png",
+        "userNic": "小健侃搞笑",
+        "userPic": "./static/img/yoo05.png",
+        "userCom": "8"
+      },
+      {
+        "listPic": "./static/img/yoo01.png",
+        "userNic": "小健侃搞笑",
+        "userPic": "./static/img/yoo05.png",
+        "userCom": "8"
+      },
+      {
+        "listPic": "./static/img/yoo01.png",
+        "userNic": "小健侃搞笑",
+        "userPic": "./static/img/yoo05.png",
+        "userCom": "8"
+      }
+    ]
+  },
+  "vipInfo": {
+    "vipHeader":{
+      "userPic":"./static/img/vip04.png",
+      "userLevelPic":"./static/img/vip05.png",
+      "vipNav":["精选","VIP福利社","电影","电视剧","动漫","小说","纪录片","音乐","体育"]
+    },
+    "vipSection":{
+      "vipSectionDevPic":"./static/img/vip01.png",
+      "vipBannerInfo":[
+        {
+          "bannerPic":"./static/img/vip02.png"
+        },
+        {
+          "bannerPic":"./static/img/vip02.png"
+        },
+        {
+          "bannerPic":"./static/img/vip02.png"
+        },
+        {
+          "bannerPic":"./static/img/vip02.png"
+        }
+      ],
+      "vipSectionListInfo":[
+        {
+          "listInfoPic":"./static/img/vip03.png",
+          "listInfoTitle":"怒晴湘西 · 看全集",
+          "listInfoDes":"帅！ 陈玉楼空降单挑尸王"
+        },
+        {
+          "listInfoPic":"./static/img/vip03.png",
+          "listInfoTitle":"怒晴湘西 · 看全集",
+          "listInfoDes":"帅！ 陈玉楼空降单挑尸王"
+        },
+        {
+          "listInfoPic":"./static/img/vip03.png",
+          "listInfoTitle":"怒晴湘西 · 看全集",
+          "listInfoDes":"帅！ 陈玉楼空降单挑尸王"
+        },
+        {
+          "listInfoPic":"./static/img/vip03.png",
+          "listInfoTitle":"怒晴湘西 · 看全集",
+          "listInfoDes":"帅！ 陈玉楼空降单挑尸王"
+        }
+      ]
+    }
+  },
+  "doKiInfo":{
+    "doKiHeader":{
+      "doKiNavInfo":["广场","推荐"],
+      "doKiSearchCon":"华晨宇"
+    },
+    "doKiSection":{
+      "doKiBanner":[
+        {
+          "bannerPic":"./static/img/doki04.png"
+        },
+        {
+          "bannerPic":"./static/img/doki04.png"
+        }
+      ],
+      "doKiRiBao":{
+        "doKiRiBaoTitle":"日报",
+        "doKiRiBaoList":[
+          {
+            "riBaoCon":"11112019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          },
+          {
+            "riBaoCon":"2222222019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          },
+          {
+            "riBaoCon":"333332019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          },
+          {
+            "riBaoCon":"444442019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          },
+          {
+            "riBaoCon":"555555552019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          },
+          {
+            "riBaoCon":"6666666662019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          },
+          {
+            "riBaoCon":"777777772019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          },
+          {
+            "riBaoCon":"88888882019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          },
+          {
+            "riBaoCon":"9999992019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          },
+          {
+            "riBaoCon":"10101012019doki明星团年饭收官了！ 8场狂欢8份好礼"
+          }
+        ]
+      },
+      "doKiMing":[
+        {
+          "mingPic":"./static/img/doki08.png",
+          "mingTitle":"星耀榜",
+          "mingDes":"朱一龙人气过剩，你猜咋样"
+        },
+        {
+          "mingPic":"./static/img/doki08.png",
+          "mingTitle":"星耀榜",
+          "mingDes":"朱一龙人气过剩，你猜咋样"
+        },
+        {
+          "mingPic":"./static/img/doki08.png",
+          "mingTitle":"星耀榜",
+          "mingDes":"朱一龙人气过剩，你猜咋样"
+        },
+        {
+          "mingPic":"./static/img/doki08.png",
+          "mingTitle":"星耀榜",
+          "mingDes":"朱一龙人气过剩，你猜咋样"
+        }
+      ],
+      "doKiTieList":{
+        "listTitle":"每日十佳饭贴",
+        "listCon":[
+          {
+            "pic":"./static/img/doki09.png",
+            "Title":"熊辛淇：微风徐徐温不及你",
+            "userPic":"./static/img/doki10.png",
+            "userName":"熊小白"
+          },
+          {
+            "pic":"./static/img/doki09.png",
+            "Title":"熊辛淇：微风徐徐温不及你",
+            "userPic":"./static/img/doki10.png",
+            "userName":"熊小白"
+          }
+        ]
+      },
+      "doKiHot":{
+        "title":"娱乐热点"
+      }
+    }
+  },
+  "myInfo":{
+    "myHeader":{
+      "myPic":"./static/img/my01.png",
+      "myName":"遇事先来方可什",
+      "myLevelPic":"./static/img/vip05.png"
+    },
+    "mySection":{
+      "myVip":[
+        {
+          "myVipTitle":"我的VIP会员",
+          "myVipAct":"VIP首月仅12元"
+        },
+        {
+          "myVipTitle":"我的积分好礼",
+          "myVipAct":"370积分待使用"
+        }
+      ],
+      "myMess":{
+        "myMessPic":"./static/img/doki02.png",
+        "myMessWords":"消息",
+        "myMessList":[
+          {
+            "myMessCount":"0",
+            "myMessWord":"加入的圈子"
+          },
+          {
+            "myMessCount":"0",
+            "myMessWord":"关注"
+          },
+          {
+            "myMessCount":"2",
+            "myMessWord":"收藏"
+          }
+        ]
+      },
+      "myHistory":{
+        "hTitle":"观看历史",
+        "hList":[
+          {
+            "hPic":"./static/img/my002.png",
+            "hName":"无名之辈"
+          },
+          {
+            "hPic":"./static/img/my004.png",
+            "hName":"奔跑吧3 · 最新路透 陈赫曝退出《奔跑吧》"
+          },
+          {
+            "hPic":"./static/img/my005.png",
+            "hName":"王牌对王牌 第四集 第四期：贾玲沈腾你猜"
+          },
+          {
+            "hPic":"./static/img/my004.png",
+            "hName":"奔跑吧3 · 最新路透 陈赫曝退出《奔跑吧》"
+          },
+          {
+            "hPic":"./static/img/my005.png",
+            "hName":"王牌对王牌 第四集 第四期：贾玲沈腾你猜"
+          }
+        ]
+      },
+      "myDownload":{
+        "dTitle":"我的下载",
+        "dList":[
+          {
+            "dPic":"./static/img/my003.png",
+            "dName":"《南风北巷》故事还长 你就别再失望"
+          },
+          {
+            "dPic":"./static/img/my003.png",
+            "dName":"《南风北巷》故事还长 你就别再失望"
+          }
+        ]
+      },
+      "myInterest":{
+        "iTitle":"兴趣中心",
+        "iList":[
+          {
+            "iPic":"./static/img/my006.png",
+            "iName":"爱玩游戏中心",
+            "iWord":"斗罗大陆小游戏"
+          },
+          {
+            "iPic":"./static/img/my006.png",
+            "iName":"爱玩游戏中心",
+            "iWord":"斗罗大陆小游戏"
+          },
+          {
+            "iPic":"./static/img/my006.png",
+            "iName":"爱玩游戏中心",
+            "iWord":"斗罗大陆小游戏"
+          },
+          {
+            "iPic":"./static/img/my006.png",
+            "iName":"爱玩游戏中心",
+            "iWord":"斗罗大陆小游戏"
+          }
+        ]
+      }
+    }
+  }
+}
